@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+.green { background-color: #d8ff7d; }
+
+.blue { background-color: #8aedff; }
+
+.yellow { background-color: #ffdf51; }
+
+.purple { background-color: #da89ff; }
+
+.pink { background-color: #f598f8; }
+
+.btn { text-transform: uppercase; border: none; font-size: 1rem; text-decoration: none; text-align: center; }
+
+.btn-header { padding: 4px 12px; border-right: solid 2px #f700ff; background-color: #f8c2fa; color: #f700ff; border-bottom: 2px solid #f700ff; font-family: "VT323", monospace; letter-spacing: 0.2rem; }
+
+.btn-header:hover { background-color: #f2b4ff; }
+
+.btn-header.active { border-bottom: none; background-color: #f7e9f6; }
+
+.btn-lines::before, .btn-lines::after { content: ""; width: 23px; height: 5px; border-top: solid 2px #f700ff; border-bottom: solid 2px #f700ff; display: inline-block; vertical-align: middle; margin: 0 8px 2px 0; }
+
+.btn-lines::after { margin: 0 0 2px 8px; }
+
+.links { text-align: center; display: grid; grid-template-columns: 1fr; }
+
+.btn-links { font-family: "VT323", monospace; color: black; padding: 8px 24px; border: 2px solid black; border-radius: 30px; box-shadow: 5px 5px 0px black; letter-spacing: 0.1rem; margin: 8px 8px; }
+
+@media (min-width: 768px) { .links { grid-template-columns: 1fr 1fr 1fr; } }
+
+.tabs { display: flex; justify-content: flex-start; background-color: #f8c2fa; }
+
+.tabcontent { animation: fadeTab 1s; display: flex; justify-content: center; align-items: center; height: 95%; margin: 0 32px; text-align: center; }
+
+.tabcontent p { margin-bottom: 48px; }
+
+@keyframes fadeTab { from { opacity: 0; }
+  to { opacity: 1; } }
+
+body { display: flex; justify-content: center; align-items: center; box-sizing: border-box; height: 98vh; overflow: hidden; }
+
+.window { height: 100%; width: 95vw; border: 2px solid #f700ff; background-color: #f7e9f6; }
+
+body, .window { min-width: 360px; }
+
+@media (min-width: 768px) { .window { width: 75vw; height: 70vh; } }
+
+body { background: white; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+/*# sourceMappingURL=main.css.map */

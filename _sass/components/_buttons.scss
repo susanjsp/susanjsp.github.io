@@ -1,0 +1,60 @@
+.btn {
+  text-transform: uppercase;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-header {
+  padding: 4px 12px;
+  border-right: solid 2px $borderColor;
+  background-color: $headerColor;
+  color: $borderColor;
+  border-bottom: 2px solid $borderColor;
+  font-family: $linkFont;
+  letter-spacing: 0.2rem;
+  &:hover {
+    background-color: #f2b4ff;
+  }
+  &.active {
+    border-bottom: none;
+    background-color: $backgroundColor;
+  }
+}
+.btn-lines {
+  &::before, &::after {
+    content: "";
+    width: 23px;
+    height: 5px;
+    border-top: solid 2px $borderColor;
+    border-bottom: solid 2px $borderColor;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 2px 0;
+  }
+  &::after {
+    margin: 0 0 2px 8px;
+  }
+}
+.links {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.btn-links {
+  font-family: $linkFont;
+  color: black;
+  padding: 8px 24px;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 5px 5px 0px black;
+  letter-spacing: 0.1rem;
+  margin: 8px 8px;
+}
+
+@media (min-width: 768px) {
+  .links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

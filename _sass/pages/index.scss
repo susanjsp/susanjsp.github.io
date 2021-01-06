@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 98vh;
+  overflow: hidden;
+}
+.window {
+  height: 100%;
+  width: 95vw;
+  border: 2px solid $borderColor;
+  background-color: $backgroundColor;
+}
+body, .window {
+  min-width: 360px;
+}
+
+@media (min-width: 768px) {
+  .window {
+    width: 75vw;
+    height: 70vh;
+  }
+}
