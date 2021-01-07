@@ -13,7 +13,6 @@
   color: $borderColor;
   border-bottom: 2px solid $borderColor;
   font-family: $linkFont;
-  letter-spacing: 0.2rem;
   &:hover {
     background-color: #f2b4ff;
   }
@@ -22,21 +21,7 @@
     background-color: $backgroundColor;
   }
 }
-.btn-lines {
-  &::before, &::after {
-    content: "";
-    width: 23px;
-    height: 5px;
-    border-top: solid 2px $borderColor;
-    border-bottom: solid 2px $borderColor;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 8px 2px 0;
-  }
-  &::after {
-    margin: 0 0 2px 8px;
-  }
-}
+
 .links {
   text-align: center;
   display: grid;
@@ -52,9 +37,25 @@
   letter-spacing: 0.1rem;
   margin: 8px 8px;
 }
-
+@media (min-width: 550px) {
+  .btn-header { letter-spacing: 0.1rem; }
+}
 @media (min-width: 768px) {
-  .links {
-    grid-template-columns: 1fr 1fr 1fr;
+  .links { grid-template-columns: 1fr 1fr 1fr; }
+  .btn-header { letter-spacing: 0; }
+  .btn-lines {
+    &::before, &::after {
+      content: "";
+      width: 23px;
+      height: 5px;
+      border-top: solid 2px $borderColor;
+      border-bottom: solid 2px $borderColor;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 8px 2px 0;
+    }
+    &::after {
+      margin: 0 0 2px 8px;
+    }
   }
 }

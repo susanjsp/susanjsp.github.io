@@ -2,4 +2,22 @@
   display: flex;
   justify-content: flex-start;
   background-color: $headerColor;
+  & > :last-child {
+    border-right: none;
+  }
+  & > *:not(:first-child, :last-child) {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 439px) {
+  .tabs {
+    & > :last-child {
+      border-right: 2px solid $borderColor;
+    }
+    & > *:not(:first-child, :last-child) {
+    font-size: 1rem;
+    }
+  }
 }
