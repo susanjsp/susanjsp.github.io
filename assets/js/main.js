@@ -13,7 +13,9 @@ function openTab(e) {
 	// Hide other tabs
   tabContent.forEach(tab => tab.style.display = "none");
   // Display clicked tab
-  document.getElementById(e.target.innerHTML).style.display = "flex";
+  // const t = document.getElementById(e.target.innerText.toLowerCase()).style.display;
+  const name = e.target.innerText.toLowerCase().trim();
+  document.getElementById(name).style.display = "flex";
 };
 
 // Handles adding & removing active class from header
