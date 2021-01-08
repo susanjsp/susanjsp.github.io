@@ -22,21 +22,19 @@
       <!-- Tab Content -->
       <div id="home" class="tabcontent">
         <div class="content">
-          <h2>Hey there!</h2>
-          <p>I’m Susan, and I’m from sunny Queensland in Australia.
-            I’m a previous health-care worker who’s passionate about the intersection between health and technology.</p>
+          <h2>Hi! I’m Susan, a full-stack developer. </h2>
+          <p>I’m from Brisbane, AUS. I’m a previous health-care worker who’s passionate about the intersection between health and technology.</p>
           <div class="links">
             <a href="#projects" class="btn btn-links green">projects</a>
-            <a href="https://susanjsp.com" class="btn btn-links purple" target="_blank">blog</a>
             <a href="#contact" class="btn btn-links blue">contact</a>
+            <a href="{{ site.blog }}" class="btn btn-links purple" target="_blank">blog <i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
       </div>
 
       <div id="projects" class="tabcontent">
         <div class="content">
-          <h2>Projects</h2>
-          Hey, my name is Susan. I'm from sunny Brisbane, QLD.
+          {% include projects.html %}
         </div>
       </div>
 

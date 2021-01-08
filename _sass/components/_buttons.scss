@@ -37,6 +37,17 @@
   letter-spacing: 0.1rem;
   margin: 8px 8px;
 }
+.btn-project {
+  padding: 4px 16px;
+  background-color: $blue;
+  border: 2px solid $blueBorder;
+  box-shadow: 4px 4px 0px $blueBorder;
+  border-radius: 6px;
+  font-family: $linkFont;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: white;
+}
 @media (min-width: 550px) {
   .btn-header { letter-spacing: 0.1rem; }
 }

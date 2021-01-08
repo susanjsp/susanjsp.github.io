@@ -1,0 +1,27 @@
+#projects {
+  display: table;
+  margin-right: 0px;
+  text-align: left;
+  & > div {
+    height: 100%;
+  }
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100%;
+  .projects-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 16px;
+  }
+  .projects-main {
+    overflow-y: scroll;
+    padding: 0px 8px 0px 24px;
+  }
+}
+
+// @media (min-width: 900px) {
+//   .projects-container { height: 99%; }
+// }
