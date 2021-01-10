@@ -3084,8 +3084,6 @@ body, .window { min-width: 350px; }
 
 .projects-container .projects-sidebar > :first-child { grid-column: span 3; }
 
-.projects-container .projects-main { overflow-y: scroll; }
-
 .projects-container h2 { color: white; font-size: 3rem; text-transform: uppercase; font-weight: 900; font-style: italic; margin: 16px 0px; text-shadow: 5px 5px 0px #8aedff; }
 
 .projects-container h2 .btn-links { vertical-align: middle; text-shadow: none; padding-right: 8px; padding-left: 8px; }

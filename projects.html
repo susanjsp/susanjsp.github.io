@@ -7,11 +7,11 @@ layout: index
       <div class="projects-sidebar">
         <button id="show-projects" class="btn btn-project">Projects <i class="fas fa-chevron-circle-down"></i></button></h1>
         {% for post in site.posts %}
-          <button class="btn btn-project tablinks">{{ post.title }}</button>
+          <button class="btn btn-project tablinks hide">{{ post.title }}</button>
         {% endfor %}
       </div>
       <div class="projects-main">
-        {% include projects.html %}
+        {% include project.html %}
       </div>
     </div>
   </div>
