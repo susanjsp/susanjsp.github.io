@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Susan's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script type="module" src="./assets/js/main.js"></script>
   </head>
   <body>
     <div class="window">
@@ -20,88 +21,124 @@
       <!-- Tab Content -->
       <div id="projects" class="windowcontent">
   <div class="content">
-    
-<div class="projects-container">
-  <div class="projects-sidebar">
-    <h2>Projects</h2>
-    
-      <button class=" btn btn-project">My Blog</button>
-    
-      <button class=" btn btn-project">Giftapes</button>
-    
-      <button class=" btn btn-project">Chickens Rental</button>
-    
-      <button class=" btn btn-project">Miss Cocktails</button>
-    
-      <button class=" btn btn-project">Social Badminton App</button>
-    
-  </div>
+    <div class="projects-container">
+      <div class="projects-sidebar">
+        <button id="show-projects" class="btn btn-project">Projects <i class="fas fa-chevron-circle-down"></i></button></h1>
+        
+          <button class="btn btn-project tablinks">social badminton</button>
+        
+          <button class="btn btn-project tablinks">my blog</button>
+        
+          <button class="btn btn-project tablinks">giftapes</button>
+        
+          <button class="btn btn-project tablinks">chickens rental</button>
+        
+          <button class="btn btn-project tablinks">miss cocktail</button>
+        
+      </div>
+      <div class="projects-main">
+        
+<div id="social badminton" class="projects-content tabcontent">
+  <h2>social badminton
+  <a href="https://github.com/susanjsp/social-badminton" class="btn btn-links purple"><i class="fab fa-github"></i></a>
+  <a href="" class="btn btn-links yellow"><i class="fas fa-external-link-alt"></i></a></h2>
+  <h4>Project Lead: Susan</h4>
+  <h4>Collaborators: None</h4>
+  <h5>Website for viewing local badminton clubs and weekly sessions around Queensland</h5>
+  <p><p>who, what, where, when, why</p>
+<h3 id="context">Context</h3>
+<p>The official badminton website for our area was old, and there was no website that contained all the badminton clubs in one easy-to-find location. Because of this, I wanted to create a website that showed all the weekly sessions available at the local sports clubs.</p>
 
-  <div class="projects-main">
-    
-    <div class="projects-content">
-      <h3>My Blog</h3>
-      <h4>Project Lead: Susan Pan</h4>
-      <h4>Collaborators: None</h4>
-      <h5>Personal blog created to solidify my understanding of technical concepts</h5>
-      <p>
+<h3 id="project-goal">Project Goal</h3>
+<p>To create a simple, easy-to-use website that could be used by the badminton community.</p>
+
+<h3 id="my-experience">My Experience</h3>
+
+<h3 id="outcome">Outcome</h3>
+<p>This experience was extremely meaningful as it was specifically made for a colleague. Thinking of the user stories and user flow was extremely important.</p>
 </p>
-      <a href="https://github.com/susanjsp/my-blog" class="btn btn-project"><i class="fab fa-github"></i> Github</a>
-      <a href="https://susanjsp.com/" class="btn btn-project"><i class="fas fa-external-link-alt"></i> Live</a>
-    </div>
-    
-    <div class="projects-content">
-      <h3>Giftapes</h3>
-      <h4>Project Lead: Robert Kwok</h4>
-      <h4>Collaborators: Susan Pan, Ondine Charlesworth, Jurek Osada</h4>
-      <h5>Put the meaning back into sharing. Curate fun "microsites" and share with friends.</h5>
-      <p>
-</p>
-      <a href="https://github.com/RobertK3000/giftapes" class="btn btn-project"><i class="fab fa-github"></i> Github</a>
-      <a href="http://giftapes.club" class="btn btn-project"><i class="fas fa-external-link-alt"></i> Live</a>
-    </div>
-    
-    <div class="projects-content">
-      <h3>Chickens Rental</h3>
-      <h4>Project Lead: Ondine Charlesworth</h4>
-      <h4>Collaborators: Susan Pan, Robert Kwok, Jurek Osada</h4>
-      <h5>View, list and book the company of only the very best chickens near you! Leave reviews to help future users.</h5>
-      <p>
-</p>
-      <a href="https://github.com/susanjsp/chickens-rental" class="btn btn-project"><i class="fab fa-github"></i> Github</a>
-      <a href="https://chickens-rental.herokuapp.com/" class="btn btn-project"><i class="fas fa-external-link-alt"></i> Live</a>
-    </div>
-    
-    <div class="projects-content">
-      <h3>Miss Cocktails</h3>
-      <h4>Project Lead: None</h4>
-      <h4>Collaborators: Susan Pan, Ian Chin</h4>
-      <h5>Basic rails MVC app for creating and saving cocktail recipes</h5>
-      <p>
-</p>
-      <a href="https://github.com/susanjsp/rails-mister-cocktail" class="btn btn-project"><i class="fab fa-github"></i> Github</a>
-      <a href="https://cocktails-span.herokuapp.com/" class="btn btn-project"><i class="fas fa-external-link-alt"></i> Live</a>
-    </div>
-    
-    <div class="projects-content">
-      <h3>Social Badminton App</h3>
-      <h4>Project Lead: None</h4>
-      <h4>Collaborators: Susan Pan</h4>
-      <h5>Website for viewing local badminton clubs and weekly sessions around Queensland</h5>
-      <p>
-</p>
-      <a href="https://github.com/susanjsp/social-badminton" class="btn btn-project"><i class="fab fa-github"></i> Github</a>
-      <a href="" class="btn btn-project"><i class="fas fa-external-link-alt"></i> Live</a>
-    </div>
-    
-    <br>
-  </div>
-</div>
-  </div>
 </div>
 
+<div id="my blog" class="projects-content tabcontent">
+  <h2>my blog
+  <a href="https://github.com/susanjsp/my-blog" class="btn btn-links purple"><i class="fab fa-github"></i></a>
+  <a href="https://susanjsp.com/" class="btn btn-links yellow"><i class="fas fa-external-link-alt"></i></a></h2>
+  <h4>Project Lead: Susan Pan</h4>
+  <h4>Collaborators: </h4>
+  <h5></h5>
+  <p><h3 id="context">Context</h3>
+<p>A personal project to experiment with building and deploying static websites</p>
+
+<h3 id="project-goal">Project Goal</h3>
+<ul>
+  <li>To create a place where I could record everything I’ve learnt while experimenting and building.</li>
+  <li>To improve my technical writing and communication skills</li>
+</ul>
+
+<h3 id="my-experience">My Experience</h3>
+<p>This was my first time working with Jekyll. I tried it once, gave up and went back and tried it again.</p>
+
+<p>From this project I learnt that when you stick with something long enough, it tends to finally make sense.</p>
+
+<h3 id="outcome">Outcome</h3>
+<p>Of course, this project is a continual project and I have a few ideas for features I would like to play around with. For now, I’ll keep posting about all the challenges that I face in the hopes that someone reading it will learn something new!</p>
+</p>
+</div>
+
+<div id="giftapes" class="projects-content tabcontent">
+  <h2>giftapes
+  <a href="https://github.com/RobertK3000/giftapes" class="btn btn-links purple"><i class="fab fa-github"></i></a>
+  <a href="http://giftapes.club" class="btn btn-links yellow"><i class="fas fa-external-link-alt"></i></a></h2>
+  <h4>Project Lead: Robert</h4>
+  <h4>Collaborators: Susan, Ondine, Jurek</h4>
+  <h5>Put the meaning back into sharing. Curate fun "microsites" and share with friends.</h5>
+  <p><h3 id="context">Context</h3>
+<p>This project was completed as a final project of my bootcamp. The original pitch idea was delivered by Rob, who wanted to create a curation website that is more meaningful than the sharing that is seen in traditional social media sites.</p>
+
+<h3 id="project-goal">Project Goal</h3>
+<ul>
+  <li>To create a space to share meaningful &amp; personal digital gifts to close friends</li>
+  <li>To create something playful, with an amazing user experience</li>
+</ul>
+
+<h3 id="my-experience">My Experience</h3>
+<p>As this project was to be completed in under 2 weeks, we brainstormed and worked through creating user stories, db schema and prototyping in figma together. From there, we were all assigned different sections of the website. Implementing and styling the photo-stories was my responsibility.</p>
+
+<h3 id="outcome">Outcome</h3>
+
+</p>
+</div>
+
+<div id="chickens rental" class="projects-content tabcontent">
+  <h2>chickens rental
+  <a href="https://github.com/susanjsp/chickens-rental" class="btn btn-links purple"><i class="fab fa-github"></i></a>
+  <a href="https://chickens-rental.herokuapp.com/" class="btn btn-links yellow"><i class="fas fa-external-link-alt"></i></a></h2>
+  <h4>Project Lead: Ondine</h4>
+  <h4>Collaborators: Susan, Robert, Jurek</h4>
+  <h5>View, list and book the company of only the very best chickens near you! Leave reviews to help future users.</h5>
+  <p>
+</p>
+</div>
+
+<div id="miss cocktail" class="projects-content tabcontent">
+  <h2>miss cocktail
+  <a href="https://github.com/susanjsp/rails-mister-cocktail" class="btn btn-links purple"><i class="fab fa-github"></i></a>
+  <a href="https://cocktails-span.herokuapp.com/" class="btn btn-links yellow"><i class="fas fa-external-link-alt"></i></a></h2>
+  <h4>Project Lead: None</h4>
+  <h4>Collaborators: Susan, Ian</h4>
+  <h5>Basic rails MVC app for creating and saving cocktail recipes</h5>
+  <p>
+</p>
+</div>
+
+<br>
+      </div>
     </div>
-    <script type="module" src="./assets/js/main.js"></script>
+  </div>
+</div>
+
+    </div>
+
   </body>
 </html>
 

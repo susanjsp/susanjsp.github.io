@@ -1,24 +1,12 @@
-
-<div class="projects-container">
-  <div class="projects-sidebar">
-    <h2>Projects</h2>
-    {% for post in site.posts %}
-      <button class=" btn btn-project">{{ post.title }}</button>
-    {% endfor %}
-  </div>
-
-  <div class="projects-main">
-    {% for post in site.posts %}
-    <div class="projects-content">
-      <h3>{{ post.title }}</h3>
-      <h4>Project Lead: {{ post.lead }}</h4>
-      <h4>Collaborators: {{ post.collaborators }}</h4>
-      <h5>{{ post.description }}</h5>
-      <p>{{ post.content }}</p>
-      <a href="{{post.github_link}}" class="btn btn-project"><i class="fab fa-github"></i> Github</a>
-      <a href="{{post.live_link}}" class="btn btn-project"><i class="fas fa-external-link-alt"></i> Live</a>
-    </div>
-    {% endfor %}
-    <br>
-  </div>
+{% for post in site.posts %}
+<div id="{{ post.title }}" class="projects-content tabcontent">
+  <h2>{{ post.title }}
+  <a href="{{post.github_link}}" class="btn btn-links purple"><i class="fab fa-github"></i></a>
+  <a href="{{post.live_link}}" class="btn btn-links yellow"><i class="fas fa-external-link-alt"></i></a></h2>
+  <h4>Project Lead: {{ post.lead }}</h4>
+  <h4>Collaborators: {{ post.collaborators }}</h4>
+  <h5>{{ post.description }}</h5>
+  <p>{{ post.content }}</p>
 </div>
+{% endfor %}
+<br>
