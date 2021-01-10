@@ -1,46 +1,10 @@
-// VARIABLES //
-const tabLinks = document.querySelectorAll('.tablinks');
-const tabContent = document.querySelectorAll('.tabcontent');
-const homePage = document.getElementById("home");
+import { initProjects, projectsToggle } from './project-tabs.js';
+import { initWindowTabs } from './window-tabs.js';
 
-// Only display home tab on pageload
-tabContent.forEach(tab => tab.style.display = "none");
-homePage.style.display = "flex";
+initWindowTabs();
 
-// FUNCTIONS //
-// Displays and hides tabs
-function openTab(e) {
-	// Hide other tabs
-  tabContent.forEach(tab => tab.style.display = "none");
-  // Display clicked tab
-  // const t = document.getElementById(e.target.innerText.toLowerCase()).style.display;
-  const name = e.target.innerText.toLowerCase().trim();
-  document.getElementById(name).style.display = "flex";
+if (window.location.pathname === "/projects") {
+  initProjects();
+  projectsToggle();
 };
 
-// Handles adding & removing active class from header
-function handleActive(e) {
-  tabLinks.forEach(tabLink => {
-    tabLink.classList.remove("active");
-  });
-  // If clicked link is in header, add active
-  // If clicked link is on homepage, add active to corresponding tab
-  if (e.target.classList.contains("tablinks")) {
-    e.target.classList.add("active");
-  } else {
-    const temp = document.querySelector(`#${e.target.innerHTML}-link`);
-    temp.classList.add("active");
-  }
-};
-
-function clickedLink(link) {
-  link.addEventListener('click', (e) => {
-    openTab(e);
-    handleActive(e);
-  });
-}
-
-// EVENT LISTENERS //
-const homeLinks = homePage.querySelectorAll(".links a");
-tabLinks.forEach(tLink => clickedLink(tLink));
-homeLinks.forEach(hLink => clickedLink(hLink));

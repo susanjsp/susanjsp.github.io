@@ -1,4 +1,0 @@
----
-permalink: /
-layout: index
----

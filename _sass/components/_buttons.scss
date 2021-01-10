@@ -5,7 +5,6 @@
   text-decoration: none;
   text-align: center;
 }
-
 .btn-header {
   padding: 4px 12px;
   border-right: solid 2px $borderColor;
@@ -21,11 +20,11 @@
     background-color: $backgroundColor;
   }
 }
-
 .links {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0 10vw;
 }
 .btn-links {
   font-family: $linkFont;
@@ -36,23 +35,49 @@
   box-shadow: 5px 5px 0px black;
   letter-spacing: 0.1rem;
   margin: 8px 8px;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 1px 1px 0px black;
+  }
 }
 .btn-project {
   padding: 4px 16px;
-  background-color: $blue;
-  border: 2px solid $blueBorder;
-  box-shadow: 4px 4px 0px $blueBorder;
+  background-color: #affdea;
+  border: 4px double $project-btn-shadow;
+  box-shadow: 5px 5px 0px $project-btn-shadow;
   border-radius: 6px;
   font-family: $linkFont;
   font-size: 1.1rem;
-  letter-spacing: 0.2rem;
+  font-weight: 600;
   color: white;
+  text-shadow: 2px 2px 1px $project-btn-shadow;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 1px 1px 0px $project-btn-shadow;
+    cursor: pointer;
+  }
+}
+#show-projects {
+  padding: 4px;
+  font-size: 2rem;
+  i {
+    vertical-align: middle;
+  }
+}
+// For hiding Project Buttons
+.hide {
+  display: none;
 }
 @media (min-width: 550px) {
   .btn-header { letter-spacing: 0.1rem; }
+  .btn-project { letter-spacing: 0.1rem; }
 }
 @media (min-width: 768px) {
-  .links { grid-template-columns: 1fr 1fr 1fr; }
+  .links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .btn-header { letter-spacing: 0; }
   .btn-lines {
     &::before, &::after {

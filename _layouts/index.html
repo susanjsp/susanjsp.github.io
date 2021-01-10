@@ -7,55 +7,23 @@
     <meta charset="utf-8">
     <title>Susan's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script type="module" src="./assets/js/main.js"></script>
   </head>
   <body>
     <div class="window">
       <!-- Tab Links -->
       <div class="tabs">
         <button class="btn btn-header"><i class="fas fa-times"></i></button>
-        <button id="home-link" class="tablinks btn btn-header btn-lines"><i class="fas fa-home"></i> home</button>
-        <button id="projects-link" class="tablinks btn btn-header btn-lines"><i class="fas fa-briefcase"></i> projects</button>
-        <button id="contact-link" class="tablinks btn btn-header btn-lines"><i class="fas fa-envelope-open-text"></i> contact</button>
+        <a id="home-link" class="btn btn-header btn-lines" href="/"><i class="fas fa-home"></i> home</a>
+        <a id="projects-link" class="btn btn-header btn-lines" href="/projects"><i class="fas fa-briefcase"></i> projects</a>
+        <a id="contact-link" class="btn btn-header btn-lines" href="/contact"><i class="fas fa-envelope-open-text"></i> contact</a>
         <a href="https://susanjsp.com" class="btn btn-header btn-lines" target="_blank"><i class="fab fa-microblog"></i> Blog</a>
         <button class="btn btn-header"><i class="fas fa-plus"></i></button>
       </div>
       <!-- Tab Content -->
-      <div id="home" class="tabcontent">
-        <div class="content">
-          <h2>Hi! I’m Susan, a full-stack developer. </h2>
-          <p>I’m from Brisbane, AUS. I’m a previous health-care worker who’s passionate about the intersection between health and technology.</p>
-          <div class="links">
-            <a href="#projects" class="btn btn-links green">projects</a>
-            <a href="#contact" class="btn btn-links blue">contact</a>
-            <a href="{{ site.blog }}" class="btn btn-links purple" target="_blank">blog <i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div id="projects" class="tabcontent">
-        <div class="content">
-          {% include projects.html %}
-        </div>
-      </div>
-
-      <div id="contact" class="tabcontent">
-        <div class="content">
-          <h2>Contact Me</h2>
-          <p>If you'd like to collaborate on a project together, or if you would like
-            to have a chat feel free to drop me a message below </p>
-          <div class="links">
-            <a href="{{ site.email }}" class="btn btn-links green" target="_blank"><i class="fas fa-envelope-square"></i> Email</a>
-            <a href="{{ site.github }}" class="btn btn-links purple" target="_blank"><i class="fab fa-github-alt"></i> Github</a>
-            <a href="{{ site.linkedin }}" class="btn btn-links yellow" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="{{ site.twitter }}" class="btn btn-links blue" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
-            <a href="{{ site.blog }}" class="btn btn-links pink" target="_blank"><i class="fab fa-microblog"></i> Blog</a>
-            <a href="{{ site.codepen }}" class="btn btn-links green" target="_blank"><i class="fab fa-codepen"></i> CodePen</a>
-          </div>
-        </div>
-      </div>
-
+      {{ content }}
     </div>
-    <script type="module" src="./assets/js/main.js"></script>
+
   </body>
 </html>
 

@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 98vh;
+  overflow: hidden;
+}
+.window {
+  height: 100%;
+  border: 2px solid $borderColor;
+  background-color: $backgroundColor;
+  max-width: 1000px;
+}
+body, .window {
+  min-width: 350px;
+}
+.windowcontent {
+  animation: fadeTab 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  margin: 0 32px;
+  text-align: center;
+  h2 {
+  }
+  p {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 550px) {
+  body { padding: 5vw 5vw; }
+  .windowcontent { margin: 0 5vw; }
+}
+
+@keyframes fadeTab {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

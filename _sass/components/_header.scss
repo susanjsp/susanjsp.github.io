@@ -10,7 +10,10 @@
     margin: 0;
   }
 }
-
+.header-active {
+  background-color: $backgroundColor;
+  border-bottom: none;
+}
 @media (min-width: 439px) {
   .tabs {
     & > :last-child {
