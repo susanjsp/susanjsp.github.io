@@ -3047,9 +3047,9 @@ readers do not read off random characters that represent icons */
 
 @media (min-width: 439px) { .tabs > :last-child { border-right: 2px solid #f700ff; } .tabs > *:not(:first-child, :last-child) { font-size: 1rem; } }
 
-.tabcontent { animation: fadeTab 1s; display: flex; justify-content: center; align-items: center; height: 95%; margin: 0 32px; text-align: center; }
+.windowcontent { animation: fadeTab 1s; display: flex; justify-content: center; align-items: center; height: 95%; margin: 0 32px; text-align: center; }
 
-.tabcontent p { margin-bottom: 48px; }
+.windowcontent p { margin-bottom: 48px; }
 
 @keyframes fadeTab { from { opacity: 0; }
   to { opacity: 1; } }
