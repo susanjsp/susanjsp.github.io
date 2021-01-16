@@ -3066,7 +3066,9 @@ readers do not read off random characters that represent icons */
 @keyframes fadeTab { from { opacity: 0; }
   to { opacity: 1; } }
 
-.projects-card { box-sizing: border-box; background-color: #affdea; border: 4px double #23e2b9; box-shadow: 5px 5px 0px #23e2b9; border-radius: 10px; padding: 12px 16px; transition: 0.1s ease-in-out; width: 100%; }
+.projects-card { box-sizing: border-box; background-color: #affdea; border: 4px double #23e2b9; box-shadow: 5px 5px 0px #23e2b9; border-radius: 10px; padding: 12px 16px; transition: 0.1s ease-in-out; width: 280px; }
+
+.projects-card img { border-radius: 10px; object-fit: cover; }
 
 .projects-card a { text-decoration: none; font-family: "Ubuntu", sans-serif; font-size: 1.1rem; font-weight: 600; color: white; margin: 8px 0px; }
 
@@ -3093,6 +3095,10 @@ readers do not read off random characters that represent icons */
 #projects, #project-post { overflow-y: scroll; }
 
 @media (min-width: 768px) { #projects { grid-template-columns: 1fr 1fr; } h2 { grid-column: 1 / span 2; } }
+
+#project-post img { width: 100%; height: auto; max-height: 500px; object-fit: scale-down; }
+
+#project-post ul, #project-post ol { font-family: "Ubuntu", sans-serif; }
 
 * { box-sizing: border-box; }
 

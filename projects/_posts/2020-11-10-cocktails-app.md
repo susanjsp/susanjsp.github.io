@@ -3,7 +3,7 @@ title: miss cocktail
 category: projects
 collaborators: Susan, Ian
 description: Basic rails MVC app for creating and saving cocktail recipes
-image:
+image: 'https://res.cloudinary.com/susanjsp/image/upload/v1610785125/portfolio/cocktail-card-mock-sm_oe8xmm.png'
 github_link: "https://github.com/susanjsp/rails-mister-cocktail"
 live_link: "https://cocktails-span.herokuapp.com/"
 ---

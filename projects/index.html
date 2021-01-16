@@ -7,7 +7,7 @@ layout: project-index
   {% for post in site.categories.projects %}
   <div class="projects-card">
     <div class="projects-card-top">
-      <img src="">
+      <img src="{{post.image}}" alt="Device mockup for {{post.title}}">
       <div class="projects-card-top-btns">
         <a href="{{post.github_link}}" class="btn btn-project-circle"><i class="fab fa-github"></i></a>
         <a href="{{post.live_link}}" class="btn btn-project-circle"><i class="fas fa-external-link-alt"></i></a>
