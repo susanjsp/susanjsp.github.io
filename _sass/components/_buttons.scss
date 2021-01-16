@@ -5,93 +5,45 @@
   text-decoration: none;
   text-align: center;
 }
-.btn-header {
-  padding: 4px 12px;
-  border-right: solid 2px $borderColor;
-  background-color: $headerColor;
-  color: $borderColor;
-  border-bottom: 2px solid $borderColor;
-  font-family: $linkFont;
-  &:hover {
-    background-color: #f2b4ff;
-  }
-  &.active {
-    border-bottom: none;
-    background-color: $backgroundColor;
-  }
-}
+
+/* GENREAL LINKS */
 .links {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 10vw;
+  gap: 1vw;
 }
 .btn-links {
   font-family: $linkFont;
   color: black;
-  padding: 8px 24px;
+  padding: 10px 24px;
   border: 2px solid black;
   border-radius: 30px;
-  box-shadow: 5px 5px 0px black;
+  box-shadow: 4px 5px 0px black;
   letter-spacing: 0.1rem;
   margin: 8px 8px;
   transition: 0.1s ease-in-out;
   &:hover {
-    transform: translate(4px, 4px);
+    transform: translate(3px, 4px);
     box-shadow: 1px 1px 0px black;
   }
 }
-.btn-project {
-  padding: 4px 16px;
-  background-color: #affdea;
-  border: 4px double $project-btn-shadow;
-  box-shadow: 5px 5px 0px $project-btn-shadow;
-  border-radius: 6px;
-  font-family: $linkFont;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: white;
-  text-shadow: 2px 2px 1px $project-btn-shadow;
+
+/* PROJECTS INDEX PAGE */
+.btn-project-circle {
+  border-radius: 50%;
+  padding: 4px 0px 4px 0px;
+  border: 4px double $project-card-shadow;
+  box-shadow: 2px 2px $project-card-shadow;
   transition: 0.1s ease-in-out;
   &:hover {
-    transform: translate(4px, 4px);
-    box-shadow: 1px 1px 0px $project-btn-shadow;
-    cursor: pointer;
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px $project-card-shadow;
   }
-}
-#show-projects {
-  padding: 4px;
-  font-size: 2rem;
-  i {
-    vertical-align: middle;
-  }
-}
-// For hiding Project Buttons
-.hide {
-  display: none;
-}
-@media (min-width: 550px) {
-  .btn-header { letter-spacing: 0.1rem; }
-  .btn-project { letter-spacing: 0.1rem; }
 }
 @media (min-width: 768px) {
   .links {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .btn-header { letter-spacing: 0; }
-  .btn-lines {
-    &::before, &::after {
-      content: "";
-      width: 23px;
-      height: 5px;
-      border-top: solid 2px $borderColor;
-      border-bottom: solid 2px $borderColor;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 8px 2px 0;
-    }
-    &::after {
-      margin: 0 0 2px 8px;
-    }
   }
 }

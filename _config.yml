@@ -1,6 +1,15 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://susanjsp.dev/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Susan's Portfolio" # the name of your site, e.g. ACME Corp.
+permalink: /projects/:title
+
+defaults:
+  -
+    scope:
+      path: "projects" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "project-page"
 
 twitter: "http://www.twitter.com/susanjsp_"
 github:  "http://github.com/susanjsp"
@@ -8,3 +17,4 @@ codepen: "https://codepen.io/susanjsp"
 linkedin: "https://www.linkedin.com/in/susanpan96/"
 blog: "https://susanjsp.com"
 email: "susanjsp@protonmail.com"
+

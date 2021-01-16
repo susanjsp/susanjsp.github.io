@@ -1,0 +1,21 @@
+I"<h3 id="context">Context</h3>
+<p>This project was part of my bootcamp. It was our first basic rails CRUD app that we were creating from beginning to end.</p>
+
+<h3 id="project-goals">Project Goals</h3>
+<ul>
+  <li>Design &amp; implement an application to create, update, save and delete cocktail ingredients.</li>
+</ul>
+
+<h3 id="my-role">My role</h3>
+<p>This project was done as a pair-programming exercise, and would alternate between doing work alone and working together when we encountered something more difficult.</p>
+
+<h3 id="outcome">Outcome</h3>
+<p>We were able to implement all the basic features originally planned for the app. As our working styles were complimentary, working as a pair created a productive and supportive environment.</p>
+
+<h3 id="workflow">Workflow</h3>
+<ol>
+  <li>Creating database schema and relations for postgreSQL</li>
+  <li>Work together when creating database and basic crud actions, then work separately on specific, more detailed actions</li>
+  <li>Design application and implement in front-end</li>
+</ol>
+:ET

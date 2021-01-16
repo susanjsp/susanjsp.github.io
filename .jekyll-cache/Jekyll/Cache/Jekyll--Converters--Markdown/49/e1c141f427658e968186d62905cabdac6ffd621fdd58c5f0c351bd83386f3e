@@ -1,0 +1,28 @@
+I"�<h3 id="context">Context</h3>
+<p>This project was completed as a final project of my bootcamp. The original pitch idea was delivered by Rob, who wanted to create a curation website that is more meaningful than the sharing that’s currently seen in traditional social media sites.</p>
+
+<h3 id="description">Description</h3>
+<p>Put the meaning back into sharing - curate fun “microsites” and share with friends. Choose between creating a mixtape, photo-story, a personal quiz or a curated list of interesting links and articles.</p>
+
+<h3 id="project-goals">Project Goals</h3>
+<ul>
+  <li>To create a space to share meaningful &amp; personal digital gifts to close friends</li>
+  <li>To create something playful, with an amazing fun experience</li>
+  <li>To ensure that this gift would only be viewable to the person receiving, via a unique link</li>
+</ul>
+
+<h3 id="my-experience">My Experience</h3>
+<p>As this project was to be completed in under 2 weeks, we brainstormed and worked through creating user stories, db schema and prototyping in figma together. From there, we were all assigned different sections of the website. Implementing and styling the photo-stories was my responsibility.</p>
+
+<h3 id="work-flow">Work flow</h3>
+<ol>
+  <li>Brainstorming, creating user stories, database, routes and basic controllers</li>
+  <li>Assigning each app feature a priority label - important, medium and low priority features</li>
+  <li>Assigning the design &amp; implementation of a specific gift to a group member</li>
+  <li>Each morning we did a stand-up to discuss what was achieved yesterday, today’s goals and to create an opportunity to discuss any difficult conversations so that we can support our team mates.</li>
+</ol>
+
+<h3 id="what-i-learnt">What I learnt</h3>
+<p>This project was the first experience of creating an app with endless opportunities. We came up with amazing ideas in the initial stage of creating the app, but quickly learnt that most of the features were too complicated for our experience level, or would not be feasible in our time-frame. Although frustrating, this was a valuable lesson in teaching us how to work within constraints and still make the most out of the resources that we had available to us.</p>
+
+:ET

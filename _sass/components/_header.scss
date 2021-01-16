@@ -1,26 +1,53 @@
-.tabs {
+.header {
   display: flex;
-  justify-content: flex-start;
   background-color: $headerColor;
+  border: 2px solid $borderColor;
   & > :last-child {
     border-right: none;
+    flex: 1 0 auto;
+    text-align: left;
   }
-  & > *:not(:first-child, :last-child) {
-    font-size: 1rem;
+  & > * {
+    font-size: 1.2rem;
     margin: 0;
+    letter-spacing: 0.1rem;
   }
 }
-.header-active {
-  background-color: $backgroundColor;
-  border-bottom: none;
+/* NAV BAR TABS */
+.header-tab {
+  padding: 4px 12px;
+  border-right: solid 2px $borderColor;
+  background-color: $headerColor;
+  color: $borderColor;
+  font-family: $linkFont;
+  &:hover {
+    background-color: $headerHover;
+  }
+  &.header-active {
+    border-bottom: 2px solid $backgroundColor;
+    background-color: $backgroundColor;
+  }
 }
-@media (min-width: 439px) {
-  .tabs {
-    & > :last-child {
-      border-right: 2px solid $borderColor;
+@media (min-width: 550px) {
+  .header-tab { letter-spacing: 0.1rem; }
+}
+@media (min-width: 768px) {
+  .header-tab { letter-spacing: 0px; }
+}
+@media (min-width: 800px ) {
+  .tab-lines {
+    &::before, &::after {
+      content: "";
+      width: 1rem;
+      height: 5px;
+      border-top: solid 2px $borderColor;
+      border-bottom: solid 2px $borderColor;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 8px 2px 0;
     }
-    & > *:not(:first-child, :last-child) {
-    font-size: 1rem;
+    &::after {
+      margin: 0 0 2px 8px;
     }
   }
 }
