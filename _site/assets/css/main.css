@@ -3059,8 +3059,13 @@ readers do not read off random characters that represent icons */
 
 .windowcontent { flex: 1 0 auto; display: grid; place-items: center; border: 2px solid #f700ff; border-top: none; background-color: #f7e9f6; padding: 0px 2rem; text-align: center; animation: fadeTab 1s; max-width: 1100px; }
 
+.content { padding-top: 4rem; }
+
 @keyframes fadeTab { from { opacity: 0; }
   to { opacity: 1; } }
+
+/* PAGES - About */
+#about { overflow-y: scroll; max-height: 93vh; }
 
 .projects-card { box-sizing: border-box; background-color: #affdea; border: 4px double #23e2b9; box-shadow: 5px 5px 0px #23e2b9; border-radius: 10px; padding: 12px 16px; transition: 0.1s ease-in-out; width: 280px; }
 
@@ -3096,9 +3101,9 @@ readers do not read off random characters that represent icons */
 
 #project-post ul, #project-post ol { font-family: "Ubuntu", sans-serif; }
 
-@media (min-width: 550px) { .header-tab { letter-spacing: 0.1rem; } .window { padding: 2rem 4vw; } .windowcontent { padding: 0px 7vw; } }
+@media (min-width: 550px) { .header-tab { letter-spacing: 0.1rem; } .window { padding: 2rem 4vw; } .windowcontent { padding: 0px 7vw; height: 86vh; } }
 
-@media (min-width: 768px) { .window { padding: 5rem 0px; } .window .windowcontent { width: 80vw; } /* HEADER */ .header-tab { letter-spacing: 0px; } .links { grid-template-columns: 1fr 1fr 1fr; padding: 0; } /* PROJECTS */ #projects { grid-template-columns: 1fr 1fr; } #projects h2 { grid-column: 1 / span 2; } }
+@media (min-width: 768px) { .window { padding: 5rem 0px; } .window .windowcontent { width: 80vw; height: 76vh; } /* HEADER */ .header-tab { letter-spacing: 0px; } .links { grid-template-columns: 1fr 1fr 1fr; padding: 0; } /* PROJECTS */ #projects { grid-template-columns: 1fr 1fr; } #projects h2 { grid-column: 1 / span 2; } }
 
 @media (min-width: 800px) { .header-tab { display: inline-block; } .btn-lines::before, .btn-lines::after { content: ""; width: clamp(15px, 2vw, 50px); height: 5px; border-top: solid 2px #f700ff; border-bottom: solid 2px #f700ff; display: inline-block; vertical-align: middle; margin: 0 8px 2px 0; } .btn-lines::after { margin: 0 0 2px 8px; } }
 
@@ -3110,8 +3115,10 @@ readers do not read off random characters that represent icons */
 
 body { display: flex; justify-content: center; align-items: center; background: white; margin: 0; }
 
-body p { line-height: 1.6rem; font-family: "Ubuntu", sans-serif; }
+body p, body ul, body ol { line-height: 2rem; font-family: "Ubuntu", sans-serif; margin-bottom: 2rem; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Roboto", sans-serif; text-transform: uppercase; font-style: italic; font-weight: 900; }
+h1, h2, h3, h4, h5, h6 { font-family: "Roboto", sans-serif; text-transform: uppercase; font-style: italic; font-weight: 900; color: black; margin: 2rem 0px; }
+
+h2 { font-size: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
