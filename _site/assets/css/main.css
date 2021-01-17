@@ -3057,7 +3057,7 @@ readers do not read off random characters that represent icons */
 /* WINDOW WRAPPER */
 .window { margin: 0.5rem; display: flex; flex-direction: column; height: 98vh; max-height: 1000px; }
 
-.windowcontent { flex: 1 0 auto; display: grid; place-items: center; border: 2px solid #f700ff; border-top: none; background-color: #f7e9f6; padding: 0px 2rem; text-align: center; animation: fadeTab 1s; max-width: 1120px; }
+.windowcontent { flex: 1 0 auto; display: grid; place-items: center; border: 2px solid #f700ff; border-top: none; background-color: #f7e9f6; padding: 0px 2rem; text-align: center; animation: fadeTab 1s; max-width: 1100px; }
 
 @keyframes fadeTab { from { opacity: 0; }
   to { opacity: 1; } }
