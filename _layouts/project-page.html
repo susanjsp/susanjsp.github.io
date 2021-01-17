@@ -17,7 +17,7 @@
       <div id="project-post" class="windowcontent">
         <a href="/projects">< Back to All Projects</a>
         <h2>{{ page.title }}</h2>
-        {% if page.collaborators == "" %}
+        {% if page.collaborators == "none" %}
           <h4>Personal side-project by Susan</h4>
         {% else %}
           <p><strong>Collaborators: </strong>{{ page.collaborators }}</p>

@@ -18,14 +18,13 @@
 
 /* NAV BAR TABS */
 .header-tab {
-  padding: 4px 12px;
+  padding: 4px 4px;
+  display: grid;
   width: 25%;
   border-right: solid 2px $borderColor;
   background-color: $headerColor;
   color: $borderColor;
   font-family: $linkFont;
-  text-align: center;
-  display: grid;
   border-bottom: 2px solid $borderColor;
   &:hover {
     background-color: $headerHover;

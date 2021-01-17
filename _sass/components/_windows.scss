@@ -13,13 +13,13 @@
   border: 2px solid $borderColor;
   border-top: none;
   background-color: $backgroundColor;
-  padding: 0px 2rem;
   text-align: center;
   animation: fadeTab 1s;
+  height: 90vh;
+  max-height: 93vh;
+  min-width: 340px;
   max-width: 1100px;
-}
-.content {
-  padding-top: 4rem;
+  overflow-y: auto;
 }
 @keyframes fadeTab {
   from {opacity: 0;}
@@ -27,7 +27,3 @@
 }
 
 /* PAGES - About */
-#about {
-  overflow-y: scroll;
-  max-height: 93vh;
-}

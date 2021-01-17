@@ -1,3 +1,8 @@
+@media (min-width: 350px) and (max-width: 550px ) {
+  #projects {
+    width: 96vw;
+  }
+}
 @media (min-width: 550px) {
   .header-tab { letter-spacing: 0.1rem; }
   .window {
@@ -6,6 +11,9 @@
   .windowcontent {
     padding: 0px 7vw;
     height: 86vh;
+  }
+  #projects {
+    padding: 0px 2rem 2rem 2rem;
   }
 }
 
@@ -31,6 +39,9 @@
     h2 {
       grid-column: 1 / span 2;
     }
+  }
+  #project-post {
+    padding: 16px 2rem;
   }
 }
 
