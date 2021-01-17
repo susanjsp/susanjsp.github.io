@@ -9,12 +9,32 @@
 
 @import "pages/home";
 @import "pages/projects";
+@import "pages/posts";
+@import "pages/queries";
 
-
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-
+// Basic configuration
+* {
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-family: $linkFont;
+  }
+}
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
-  color: $bodyColor;
-  font-family: $bodyFont;
+  margin: 0;
+  p {
+    line-height: 1.6rem;
+    font-family: $bodyFont;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headerFont;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
 }

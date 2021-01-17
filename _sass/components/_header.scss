@@ -1,26 +1,35 @@
-.tabs {
+.header {
   display: flex;
-  justify-content: flex-start;
   background-color: $headerColor;
+  border: 2px solid $borderColor;
   & > :last-child {
     border-right: none;
   }
-  & > *:not(:first-child, :last-child) {
-    font-size: 1rem;
+  & > * {
+    font-size: 1.2rem;
     margin: 0;
+    letter-spacing: 0.1rem;
   }
 }
-.header-active {
-  background-color: $backgroundColor;
-  border-bottom: none;
+.header-hide {
+  display: none;
 }
-@media (min-width: 439px) {
-  .tabs {
-    & > :last-child {
-      border-right: 2px solid $borderColor;
-    }
-    & > *:not(:first-child, :last-child) {
-    font-size: 1rem;
-    }
+
+/* NAV BAR TABS */
+.header-tab {
+  padding: 4px 12px;
+  width: 25%;
+  border-right: solid 2px $borderColor;
+  background-color: $headerColor;
+  color: $borderColor;
+  font-family: $linkFont;
+  text-align: center;
+  display: grid;
+  &:hover {
+    background-color: $headerHover;
+  }
+  &.header-active {
+    border-bottom: 2px solid $backgroundColor;
+    background-color: $backgroundColor;
   }
 }

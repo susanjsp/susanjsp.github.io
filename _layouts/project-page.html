@@ -1,0 +1,31 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script type="module" src="../../assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="window">
+      <!-- Tab Links -->
+      {% include header.html %}
+      <!-- Tab Content -->
+      <div id="project-post" class="windowcontent">
+        <a href="/projects">< Back to All Projects</a>
+        <h2>{{ page.title }}</h2>
+        {% if page.collaborators == "" %}
+          <h4>Personal side-project by Susan</h4>
+        {% else %}
+          <p><strong>Collaborators: </strong>{{ page.collaborators }}</p>
+        {% endif %}
+        <img src="{{ page.mockup }}" alt="Device mockup for {{ page.title }}">
+        {{ content }}
+        <a id="back-to-top" href=""> ^ </a>
+        </div>
+      </div>
+  </body>
+</html>
