@@ -1,14 +1,16 @@
 ---
-title: miss cocktail
+title: the cocktail card
 category: projects
 collaborators: Susan, Ian
 description: Basic rails MVC app for creating and saving cocktail recipes
-image: 'https://res.cloudinary.com/susanjsp/image/upload/v1610785125/portfolio/cocktail-card-mock-sm_oe8xmm.png'
+mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1610785125/portfolio/cocktail-card-mock-sm_oe8xmm.png'
+cover: 'https://res.cloudinary.com/susanjsp/image/upload/v1610839166/portfolio/cocktail-card-desktop-sm_iau1ww.png'
+gif: 'https://res.cloudinary.com/susanjsp/image/upload/v1610838828/portfolio/cocktail-card-recording-sm_qtk238.gif'
 github_link: "https://github.com/susanjsp/rails-mister-cocktail"
 live_link: "https://cocktails-span.herokuapp.com/"
 ---
 ### Context
-This project was part of my bootcamp. It was our first basic rails CRUD app that we were creating from beginning to end.
+This project was our first rails CRUD app that we were creating from beginning to end.
 
 ### Project Goals
 - Design & implement an application to create, update, save and delete cocktail ingredients.

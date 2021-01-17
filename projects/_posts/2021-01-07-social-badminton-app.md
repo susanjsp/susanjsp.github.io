@@ -1,10 +1,13 @@
 ---
 title: Social Badminton
 category: projects
-image:
+mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1610841113/portfolio/badminton-figma_rnyvqs.png'
+cover: 'https://res.cloudinary.com/susanjsp/image/upload/v1610841113/portfolio/badminton-figma_rnyvqs.png'
+gif:
 github_link: "https://github.com/susanjsp/social-badminton"
 live_link:
 ---
+* This project is still in progress *
 ### Context
 The official badminton website for our area was old, and there was no website that contained all the available badminton session in one easy-to-find location. Because of this, I wanted to create a website that showed all the weekly sessions available at the local sports clubs.
 

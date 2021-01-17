@@ -18,11 +18,11 @@
         <a href="/projects">< Back to All Projects</a>
         <h2>{{ page.title }}</h2>
         {% if page.collaborators == "" %}
-          <p><strong>Collaborators: </strong>{{ page.collaborators }}</p>
-        {% else %}
           <h4>Personal side-project by Susan</h4>
+        {% else %}
+          <p><strong>Collaborators: </strong>{{ page.collaborators }}</p>
         {% endif %}
-        <img src="{{ page.image }}" alt="Device mockup for {{ page.title }}">
+        <img src="{{ page.mockup }}" alt="Device mockup for {{ page.title }}">
         {{ content }}
         <a id="back-to-top" href=""> ^ </a>
         </div>

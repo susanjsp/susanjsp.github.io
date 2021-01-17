@@ -3,7 +3,9 @@ title: chickens rental
 category: projects
 collaborators: Robert, Jurek, Ondine, Susan
 description: View, list and book the company of only the very best chickens near you! Leave reviews to help future users.
-image:
+mockup:
+cover:
+gif:
 github_link: "https://github.com/susanjsp/chickens-rental"
 live_link: "https://chickens-rental.herokuapp.com/"
 ---
