@@ -3097,7 +3097,7 @@ readers do not read off random characters that represent icons */
 
 #project-post ul, #project-post ol { font-family: "Ubuntu", sans-serif; }
 
-@media (min-width: 350px) and (max-width: 550px) { #projects { width: 96vw; } }
+@media (min-width: 350px) and (max-width: 550px) { #projects, #home { width: 96vw; } }
 
 @media (min-width: 550px) { .header-tab { letter-spacing: 0.1rem; } .window { padding: 2rem 4vw; } .windowcontent { padding: 0px 7vw; height: 86vh; } #projects { padding: 0px 2rem 2rem 2rem; } }
 
