@@ -4,8 +4,6 @@
   border: 2px solid $borderColor;
   & > :last-child {
     border-right: none;
-    flex: 1 0 auto;
-    text-align: left;
   }
   & > * {
     font-size: 1.2rem;
@@ -13,41 +11,25 @@
     letter-spacing: 0.1rem;
   }
 }
+.header-hide {
+  display: none;
+}
+
 /* NAV BAR TABS */
 .header-tab {
   padding: 4px 12px;
+  width: 25%;
   border-right: solid 2px $borderColor;
   background-color: $headerColor;
   color: $borderColor;
   font-family: $linkFont;
+  text-align: center;
+  display: grid;
   &:hover {
     background-color: $headerHover;
   }
   &.header-active {
     border-bottom: 2px solid $backgroundColor;
     background-color: $backgroundColor;
-  }
-}
-@media (min-width: 550px) {
-  .header-tab { letter-spacing: 0.1rem; }
-}
-@media (min-width: 768px) {
-  .header-tab { letter-spacing: 0px; }
-}
-@media (min-width: 800px ) {
-  .tab-lines {
-    &::before, &::after {
-      content: "";
-      width: 1rem;
-      height: 5px;
-      border-top: solid 2px $borderColor;
-      border-bottom: solid 2px $borderColor;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 8px 2px 0;
-    }
-    &::after {
-      margin: 0 0 2px 8px;
-    }
   }
 }
