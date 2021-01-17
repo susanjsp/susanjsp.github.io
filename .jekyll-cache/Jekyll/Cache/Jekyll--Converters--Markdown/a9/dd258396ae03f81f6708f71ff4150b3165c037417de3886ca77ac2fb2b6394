@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Social Badminton</title>
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <script type="module" src="../../assets/js/main.js"></script>
-  </head>
-  <body>
-    <div class="window">
-      <!-- Tab Links -->
-      <div class="header">
-  <a class="btn header-tab btn-lines" href="/" data-tab="home"><i class="fas fa-home"></i> home</a>
-  <a class="btn header-tab btn-lines" href="/about" data-tab="about"><i class="fas fa-user-circle"></i> about</a>
-  <a class="btn header-tab btn-lines" href="/projects" data-tab="projects"><i class="fas fa-briefcase"></i> projects</a>
-  <a class="btn header-tab btn-lines" href="/contact" data-tab="contact"><i class="fas fa-envelope-open-text"></i> contact</a>
-</div>
-      <!-- Tab Content -->
-      <div id="project-post" class="windowcontent">
-        <a href="/projects">< Back to All Projects</a>
-        <h2>Social Badminton</h2>
-        
-          <h4>Personal side-project by Susan</h4>
-        
-        <img src="https://res.cloudinary.com/susanjsp/image/upload/v1610841113/portfolio/badminton-figma_rnyvqs.png" alt="Device mockup for Social Badminton">
-        <p>! This project is still in progress !</p>
+I"U<p>! This project is still in progress</p>
 <h3 id="context">Context</h3>
 <p>The official badminton website for our area was old, and there was no website that contained all the available badminton session in one easy-to-find location. Because of this, I wanted to create a website that showed all the weekly sessions available at the local sports clubs.</p>
 
@@ -52,9 +26,4 @@
   <li>Implement back-end features in rails</li>
   <li>Implement design using figma prototype</li>
 </ol>
-
-        <a id="back-to-top" href=""> ^ </a>
-        </div>
-      </div>
-  </body>
-</html>
+:ET

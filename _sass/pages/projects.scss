@@ -1,13 +1,14 @@
 #projects {
-  display: grid;
-  gap: 1rem;
-  place-items: center;
-  padding: 1rem 3rem;
-  grid-template-columns: 1fr;
-  height: 94%;
+  .content {
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 #project-post {
-  padding: 16px;
+  padding: 16px 1rem;
   text-align: left;
   display: block;
   height: 90%;

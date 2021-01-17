@@ -1,6 +1,7 @@
 ---
 title: my blog
 category: projects
+collaborators: none
 mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1610844539/portfolio/mockup-sm_ykfdtu.png'
 cover: 'https://res.cloudinary.com/susanjsp/image/upload/v1610843921/portfolio/my-blog-cover_opfrcu.png'
 gif:
