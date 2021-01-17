@@ -3039,7 +3039,7 @@ readers do not read off random characters that represent icons */
 
 .btn-project-circle:hover { transform: translate(1px, 1px); box-shadow: 1px 1px #23e2b9; }
 
-.header { display: flex; background-color: #fdd2ff; border: 2px solid #f700ff; }
+.header { display: flex; background-color: #fdd2ff; border: 2px solid #f700ff; border-bottom: none; }
 
 .header > :last-child { border-right: none; }
 
@@ -3048,11 +3048,11 @@ readers do not read off random characters that represent icons */
 .header-hide { display: none; }
 
 /* NAV BAR TABS */
-.header-tab { padding: 4px 12px; width: 25%; border-right: solid 2px #f700ff; background-color: #fdd2ff; color: #f700ff; font-family: "VT323", monospace; text-align: center; display: grid; }
+.header-tab { padding: 4px 12px; width: 25%; border-right: solid 2px #f700ff; background-color: #fdd2ff; color: #f700ff; font-family: "VT323", monospace; text-align: center; display: grid; border-bottom: 2px solid #f700ff; }
 
-.header-tab:hover { background-color: #fdd2ff; }
+.header-tab:hover { background-color: #fdd2ff; color: #fa67ff; }
 
-.header-tab.header-active { border-bottom: 2px solid #f7e9f6; background-color: #f7e9f6; }
+.header-tab.header-active { background-color: #f7e9f6; border-bottom: 2px solid #f7e9f6; }
 
 /* WINDOW WRAPPER */
 .window { margin: 0.5rem; display: flex; flex-direction: column; height: 98vh; max-height: 1000px; }

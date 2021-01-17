@@ -2,6 +2,7 @@
   display: flex;
   background-color: $headerColor;
   border: 2px solid $borderColor;
+  border-bottom: none;
   & > :last-child {
     border-right: none;
   }
@@ -25,11 +26,13 @@
   font-family: $linkFont;
   text-align: center;
   display: grid;
+  border-bottom: 2px solid $borderColor;
   &:hover {
     background-color: $headerHover;
+    color: rgb(250, 103, 255);
   }
   &.header-active {
-    border-bottom: 2px solid $backgroundColor;
     background-color: $backgroundColor;
+    border-bottom: 2px solid $backgroundColor;
   }
 }
