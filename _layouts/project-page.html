@@ -22,8 +22,18 @@
         {% else %}
           <p><strong>Collaborators: </strong>{{ page.collaborators }}</p>
         {% endif %}
-        <img src="{{ page.mockup }}" alt="Device mockup for {{ page.title }}">
-        {{ content }}
+        <!-- Mac Window style -->
+        <div class="mac-window">
+          <div class="mac-window-header">
+            <div class="mac-window-buttons">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+          </div>
+          <img src="{{ page.mockup }}" alt="Device mockup for {{ page.title }}">
+        </div>
+          {{ content }}
         <a id="back-to-top" href=""> ^ </a>
         </div>
       </div>

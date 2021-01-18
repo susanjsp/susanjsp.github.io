@@ -29,18 +29,3 @@
     box-shadow: 1px 1px 0px black;
   }
 }
-
-/* PROJECTS INDEX PAGE */
-.btn-project-circle {
-  border-radius: 50%;
-  border: 4px double $project-card-shadow;
-  box-shadow: 2px 2px $project-card-shadow;
-  transition: 0.1s ease-in-out;
-  i {
-    color: $project-card-shadow;
-  }
-  &:hover {
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px $project-card-shadow;
-  }
-}
