@@ -13,7 +13,7 @@
     height: 86vh;
   }
   #projects {
-    padding: 0px 2rem 2rem 2rem;
+    // padding: 0px 2rem 2rem 2rem;
   }
 }
 
@@ -35,7 +35,6 @@
 
   /* PROJECTS */
   #projects {
-    grid-template-columns: 1fr 1fr;
     h2 {
       grid-column: 1 / span 2;
     }
@@ -61,6 +60,10 @@
     &::after {
       margin: 0 0 2px 8px;
     }
+  }
+  /* PROJECTS PAGE */
+  .projects {
+
   }
 }
 

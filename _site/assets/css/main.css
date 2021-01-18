@@ -3023,6 +3023,8 @@ readers do not read off random characters that represent icons */
 
 .pink { background-color: #f598f8; }
 
+.red { background-color: #dd5c5c; }
+
 .btn { text-transform: uppercase; border: none; font-size: 1rem; text-decoration: none; text-align: center; }
 
 /* GENREAL LINKS */
@@ -3031,13 +3033,6 @@ readers do not read off random characters that represent icons */
 .btn-links { font-family: "VT323", monospace; color: black; padding: 10px 24px; border: 2px solid black; border-radius: 30px; box-shadow: 4px 5px 0px black; letter-spacing: 0.1rem; margin: 8px 8px; transition: 0.1s ease-in-out; }
 
 .btn-links:hover { transform: translate(3px, 4px); box-shadow: 1px 1px 0px black; }
-
-/* PROJECTS INDEX PAGE */
-.btn-project-circle { border-radius: 50%; border: 4px double #23e2b9; box-shadow: 2px 2px #23e2b9; transition: 0.1s ease-in-out; }
-
-.btn-project-circle i { color: #23e2b9; }
-
-.btn-project-circle:hover { transform: translate(1px, 1px); box-shadow: 1px 1px #23e2b9; }
 
 .header { display: flex; background-color: #fdd2ff; border: 2px solid #f700ff; border-bottom: none; }
 
@@ -3063,29 +3058,29 @@ readers do not read off random characters that represent icons */
   to { opacity: 1; } }
 
 /* PAGES - About */
-.projects-card { box-sizing: border-box; background-color: #affdea; border: 4px double #23e2b9; box-shadow: 5px 5px 0px #23e2b9; border-radius: 10px; padding: 12px 16px; transition: 0.1s ease-in-out; width: 280px; }
+.projects-card { transition: 0.1s ease-in-out; width: 300px; position: relative; background-color: cornsilk; transition: 0.2s ease-in-out; }
 
-.projects-card img { border-radius: 10px; object-fit: cover; }
+.projects-card img { object-fit: cover; width: 90%; height: 180px; }
 
-.projects-card a { text-decoration: none; font-family: "Ubuntu", sans-serif; font-size: 1.1rem; font-weight: 600; color: white; margin: 8px 0px; }
+.projects-card > a { text-decoration: none; font-family: "Roboto", sans-serif; font-size: 1.1rem; font-weight: 600; font-style: italic; color: black; text-transform: uppercase; margin: 8px 0px; display: block; }
 
-.projects-card > a { text-shadow: 2px 2px 1px #23e2b9; text-transform: uppercase; }
+.projects-card:hover { transform: scale(1.05); }
 
-.projects-card:hover { transform: translate(4px, 4px); box-shadow: 1px 1px 0px #23e2b9; }
+/* GITHUB & LIVE LINK */
+.projects-card-btns { margin: 1rem 0px; position: absolute; right: 22px; bottom: 0px; }
 
-.projects-card-top { height: 120px; margin-bottom: 0.5rem; }
+.projects-card-btns .btn-project { padding: 10px 10px 8px 10px; background-color: #affdea; border: solid 1px black; border-radius: 50%; display: block; margin-bottom: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); }
 
-.projects-card-top img { float: left; width: 80%; height: 100%; border: 2px solid #23e2b9; }
+/* MAC WINDOW STYLE */
+.mac-window { border: 1px solid black; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); }
 
-.projects-card-top-btns { float: right; width: 16%; display: flex; flex-direction: column; justify-content: flex-start; height: 100%; border-radius: 4px; }
+.mac-window .mac-window-header { height: 20px; background-color: #affdea; border-bottom: 1px solid black; }
 
-.projects-card-top-btns a { padding: 4px; }
+.mac-window .mac-window-buttons { display: flex; }
 
-.projects-card-top-btns div { background-color: #23e2b9; width: auto; height: 25px; border-radius: 5px; }
+.mac-window .mac-window-buttons > * { height: 10px; width: 10px; border-radius: 50%; border: 1px solid black; margin: 5px 4px; }
 
 .avatar { height: 150px; width: 150px; object-fit: cover; border-radius: 50%; border: 2px black solid; box-shadow: 2px 2px 0px 2px white, -2px -2px 0px 2px white; }
-
-#projects .content { display: grid; gap: 1rem; place-items: center; grid-template-columns: 1fr; width: 100%; }
 
 #project-post { padding: 16px 1rem; text-align: left; display: block; height: 90%; }
 
@@ -3093,17 +3088,21 @@ readers do not read off random characters that represent icons */
 
 #projects, #project-post { overflow-y: scroll; }
 
-#project-post img { width: 100%; height: auto; max-height: 500px; object-fit: scale-down; }
+.projects-container { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; justify-content: space-around; width: 100%; margin-bottom: 2rem; }
+
+#project-post img { width: 100%; height: auto; max-width: 800px; object-fit: scale-down; }
 
 #project-post ul, #project-post ol { font-family: "Ubuntu", sans-serif; }
 
+#project-post .mac-window { width: clamp(298px, 100%, 800px); }
+
 @media (min-width: 350px) and (max-width: 550px) { #projects, #home { width: 96vw; } }
 
-@media (min-width: 550px) { .header-tab { letter-spacing: 0.1rem; } .window { padding: 2rem 4vw; } .windowcontent { padding: 0px 7vw; height: 86vh; } #projects { padding: 0px 2rem 2rem 2rem; } }
+@media (min-width: 550px) { .header-tab { letter-spacing: 0.1rem; } .window { padding: 2rem 4vw; } .windowcontent { padding: 0px 7vw; height: 86vh; } }
 
-@media (min-width: 768px) { .window { padding: 5rem 0px; } .window .windowcontent { width: 80vw; height: 76vh; } /* HEADER */ .header-tab { letter-spacing: 0px; } .links { grid-template-columns: 1fr 1fr 1fr; padding: 0; } /* PROJECTS */ #projects { grid-template-columns: 1fr 1fr; } #projects h2 { grid-column: 1 / span 2; } #project-post { padding: 16px 2rem; } }
+@media (min-width: 768px) { .window { padding: 5rem 0px; } .window .windowcontent { width: 80vw; height: 76vh; } /* HEADER */ .header-tab { letter-spacing: 0px; } .links { grid-template-columns: 1fr 1fr 1fr; padding: 0; } /* PROJECTS */ #projects h2 { grid-column: 1 / span 2; } #project-post { padding: 16px 2rem; } }
 
-@media (min-width: 800px) { .header-tab { display: inline-block; } .btn-lines::before, .btn-lines::after { content: ""; width: clamp(15px, 2vw, 50px); height: 5px; border-top: solid 2px #f700ff; border-bottom: solid 2px #f700ff; display: inline-block; vertical-align: middle; margin: 0 8px 2px 0; } .btn-lines::after { margin: 0 0 2px 8px; } }
+@media (min-width: 800px) { .header-tab { display: inline-block; } .btn-lines::before, .btn-lines::after { content: ""; width: clamp(15px, 2vw, 50px); height: 5px; border-top: solid 2px #f700ff; border-bottom: solid 2px #f700ff; display: inline-block; vertical-align: middle; margin: 0 8px 2px 0; } .btn-lines::after { margin: 0 0 2px 8px; } /* PROJECTS PAGE */ }
 
 @media (min-width: 1000px) { .window { padding: 5rem 10vw; } }
 

@@ -4,19 +4,25 @@ layout: project-index
 ---
 <div id="projects" class="windowcontent">
   <div class="content">
-    <h2>all projects</h2>
-    {% for post in site.categories.projects %}
-      <div class="projects-card">
-        <div class="projects-card-top">
-          <img src="{{post.cover}}" alt="Desktop view for for {{post.title}}">
-          <div class="projects-card-top-btns">
-            <a href="{{post.github_link}}" class="btn btn-project-circle"><i class="fab fa-github"></i></a>
-            <a href="{{post.live_link}}" class="btn btn-project-circle"><i class="fas fa-external-link-alt"></i></a>
-            <!-- <div></div> -->
+    <h2>My projects</h2>
+    <div class="projects-container">
+      {% for post in site.categories.projects %}
+        <div class="projects-card mac-window">
+          <div class="mac-window-header">
+            <div class="mac-window-buttons">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+          </div>
+          <a href="{{ post.url }}">{{ post.title}}</a>
+          <a href="{{ post.url }}"><img src="{{post.cover}}" alt="Desktop view for for {{post.title}}"></a>
+          <div class="projects-card-btns">
+            <a href="{{post.github_link}}" class="btn btn-project green"><i class="fab fa-github-alt"></i></a>
+            <a href="{{post.live_link}}" class="btn btn-project blue"><i class="fas fa-link"></i></a>
           </div>
         </div>
-        <a href="{{ post.url }}">{{ post.title}}</a>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
