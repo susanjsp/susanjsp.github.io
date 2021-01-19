@@ -28,4 +28,17 @@
     transform: translate(3px, 4px);
     box-shadow: 1px 1px 0px black;
   }
+  &:hover i {
+    animation: blinking 2s infinite;
+  }
+}
+
+@keyframes blinking {
+  0% { transform: scale(1); }
+  5% { transform: scale(1, 0); }
+  10%, 40% { transform: scale(1); }
+  45% { transform: scale(1, 0); }
+  50% { transform: scale(1); }
+  55% { transform: scale(1, 0); }
+  60%, 100% { transform: scale(1); }
 }

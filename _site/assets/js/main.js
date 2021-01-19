@@ -1,10 +1,9 @@
-import { initProjects, projectsToggle } from './project-tabs.js';
 import { initWindowTabs } from './window-tabs.js';
+import { animateLetters } from './button-animation.js';
 
 initWindowTabs();
 
-// if (window.location.pathname === "/projects") {
-//   initProjects();
-//   projectsToggle();
-// };
+let buttons = document.querySelectorAll('.btn-links');
+buttons.forEach(button => button.addEventListener('mouseenter', (e) => animateLetters(e)));
+
 

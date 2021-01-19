@@ -12,8 +12,11 @@
     padding: 0px 7vw;
     height: 86vh;
   }
-  #projects {
-    // padding: 0px 2rem 2rem 2rem;
+  .projects-card {
+    width: 50vw;
+    img {
+      height: 45vw;
+    }
   }
 }
 
