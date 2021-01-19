@@ -3034,6 +3034,16 @@ readers do not read off random characters that represent icons */
 
 .btn-links:hover { transform: translate(3px, 4px); box-shadow: 1px 1px 0px black; }
 
+.btn-links:hover i { animation: blinking 2s infinite; }
+
+@keyframes blinking { 0% { transform: scale(1); }
+  5% { transform: scale(1, 0); }
+  10%, 40% { transform: scale(1); }
+  45% { transform: scale(1, 0); }
+  50% { transform: scale(1); }
+  55% { transform: scale(1, 0); }
+  60%, 100% { transform: scale(1); } }
+
 .header { display: flex; background-color: #fdd2ff; border: 2px solid #f700ff; border-bottom: none; }
 
 .header > :last-child { border-right: none; }
@@ -3058,27 +3068,41 @@ readers do not read off random characters that represent icons */
   to { opacity: 1; } }
 
 /* PAGES - About */
-.projects-card { transition: 0.1s ease-in-out; width: 300px; position: relative; background-color: cornsilk; transition: 0.2s ease-in-out; }
+.projects-card { transition: 0.1s ease-in-out; width: 300px; max-width: 400px; position: relative; background-color: cornsilk; transition: 0.2s ease-in-out; /* CARD HOVER ANIMATIONS */ }
 
-.projects-card img { object-fit: cover; width: 90%; height: 180px; }
+.projects-card img { object-fit: cover; width: 90%; height: 180px; max-height: 250px; }
 
 .projects-card > a { text-decoration: none; font-family: "Roboto", sans-serif; font-size: 1.1rem; font-weight: 600; font-style: italic; color: black; text-transform: uppercase; margin: 8px 0px; display: block; }
 
-.projects-card:hover { transform: scale(1.05); }
+.projects-card:hover { transform: scale(1.02); }
+
+.projects-card:hover .mac-window-header { background-color: #4497e4; }
+
+.projects-card:hover .mac-window-buttons .red { animation: bounce 1s infinite; }
+
+.projects-card:hover .mac-window-buttons .yellow { animation: bounce 1s infinite 0.1s; }
+
+.projects-card:hover .mac-window-buttons .green { animation: bounce 1s infinite 0.2s; }
 
 /* GITHUB & LIVE LINK */
 .projects-card-btns { margin: 1rem 0px; position: absolute; right: 22px; bottom: 0px; }
 
 .projects-card-btns .btn-project { padding: 10px 10px 8px 10px; background-color: #affdea; border: solid 1px black; border-radius: 50%; display: block; margin-bottom: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); }
 
-/* MAC WINDOW STYLE */
-.mac-window { border: 1px solid black; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); }
+.projects-card-btns .btn-project:hover { background-color: #4497e4; animation: bounce 1s infinite; }
 
-.mac-window .mac-window-header { height: 20px; background-color: #affdea; border-bottom: 1px solid black; }
+/* MAC WINDOW STYLE */
+.mac-window { border: 1px solid black; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); }
+
+.mac-window .mac-window-header { height: 20px; background-color: #affdea; border-bottom: 1px solid black; transition: linear 0.5s; }
 
 .mac-window .mac-window-buttons { display: flex; }
 
 .mac-window .mac-window-buttons > * { height: 10px; width: 10px; border-radius: 50%; border: 1px solid black; margin: 5px 4px; }
+
+@keyframes bounce { 0% { transform: translateY(0px); }
+  40% { transform: translateY(-8px); }
+  80%, 100% { transform: translateY(0px); } }
 
 .avatar { height: 150px; width: 150px; object-fit: cover; border-radius: 50%; border: 2px black solid; box-shadow: 2px 2px 0px 2px white, -2px -2px 0px 2px white; }
 
@@ -3098,7 +3122,7 @@ readers do not read off random characters that represent icons */
 
 @media (min-width: 350px) and (max-width: 550px) { #projects, #home { width: 96vw; } }
 
-@media (min-width: 550px) { .header-tab { letter-spacing: 0.1rem; } .window { padding: 2rem 4vw; } .windowcontent { padding: 0px 7vw; height: 86vh; } }
+@media (min-width: 550px) { .header-tab { letter-spacing: 0.1rem; } .window { padding: 2rem 4vw; } .windowcontent { padding: 0px 7vw; height: 86vh; } .projects-card { width: 50vw; } .projects-card img { height: 45vw; } }
 
 @media (min-width: 768px) { .window { padding: 5rem 0px; } .window .windowcontent { width: 80vw; height: 76vh; } /* HEADER */ .header-tab { letter-spacing: 0px; } .links { grid-template-columns: 1fr 1fr 1fr; padding: 0; } /* PROJECTS */ #projects h2 { grid-column: 1 / span 2; } #project-post { padding: 16px 2rem; } }
 

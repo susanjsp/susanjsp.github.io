@@ -1,6 +1,7 @@
 .projects-card {
   transition: 0.1s ease-in-out;
   width: 300px;
+  max-width: 400px;
   position: relative;
   background-color: cornsilk;
   transition: 0.2s ease-in-out;
@@ -8,6 +9,7 @@
     object-fit: cover;
     width: 90%;
     height: 180px;
+    max-height: 250px;
   }
   & > a {
     text-decoration: none;
@@ -20,10 +22,20 @@
     margin: 8px 0px;
     display: block;
   }
+  /* CARD HOVER ANIMATIONS */
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+  }
+  &:hover .mac-window-header {
+    background-color: $project-card-hover;
+  }
+  &:hover .mac-window-buttons {
+    .red { animation: bounce 1s infinite; }
+    .yellow { animation: bounce 1s infinite 0.1s; }
+    .green { animation: bounce 1s infinite 0.2s; }
   }
 }
+
 /* GITHUB & LIVE LINK */
 .projects-card-btns {
   margin: 1rem 0px;
@@ -37,18 +49,23 @@
     border-radius: 50%;
     display: block;
     margin-bottom: 8px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2)
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    &:hover {
+      background-color: $project-card-hover;
+      animation: bounce 1s infinite;
+    }
   }
 }
 
 /* MAC WINDOW STYLE */
 .mac-window {
   border: 1px solid black;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   .mac-window-header {
     height: 20px;
     background-color: $project-card-bkg;
     border-bottom: 1px solid black;
+    transition: linear 0.5s;
   }
   .mac-window-buttons {
     display: flex;
@@ -60,4 +77,10 @@
       margin: 5px 4px;
     }
   }
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0px); }
+  40% {transform: translateY(-8px); }
+  80%, 100% {transform: translateY(0px); }
 }
