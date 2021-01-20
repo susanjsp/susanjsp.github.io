@@ -7,7 +7,7 @@
     border-right: none;
   }
   & > * {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0;
     letter-spacing: 0.1rem;
   }
@@ -18,7 +18,7 @@
 
 /* NAV BAR TABS */
 .header-tab {
-  padding: 4px 4px;
+  padding: 8px 8px;
   display: grid;
   width: 25%;
   border-right: solid 2px $borderColor;
@@ -26,12 +26,39 @@
   color: $borderColor;
   font-family: $linkFont;
   border-bottom: 2px solid $borderColor;
-  &:hover {
-    background-color: $headerHover;
-    color: rgb(250, 103, 255);
-  }
+  overflow: hidden;
+  position: relative;
   &.header-active {
     background-color: $backgroundColor;
     border-bottom: 2px solid $backgroundColor;
   }
+  &:hover i {
+    animation: shy 0.8s ease-in, dropdown 0.8s ease-in 0.8s, dropin 0.8s ease-in 1.6s;
+  }
+  /* For text & pseudo elements in tab */
+  &:hover span, &:hover.btn-lines::after, &:hover.btn-lines::before {
+    opacity: 0;
+    animation: lineSettle 0.5s ease-in 1.8s;
+    animation-fill-mode: both;
+  }
+}
+
+/* Header tabs - line pseudo-elements */
+@keyframes lineSettle {
+  from { padding: 2px 0px; }
+  to { opacity: 1; }
+}
+
+@keyframes shy {
+  0%, 100% { top: 10%; left: -28px; transform: rotate(30deg); position: absolute; }
+  20%, 40% { left: -8px; top: 10%; position: absolute;}
+  50% { left: -22px; }
+}
+@keyframes dropdown {
+  0%, 100% { top: -22px; right: 10px; transform: rotate(180deg); position: absolute; }
+  20%, 40% { top: -8px; }
+  50% { top: -22px; }
+}
+  @keyframes dropin {
+  0% { transform: translateY(-30px); }
 }

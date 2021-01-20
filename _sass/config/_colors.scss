@@ -1,20 +1,21 @@
 $bodyColor: #000000;
-$backgroundColor: #f7e9f6;
-$borderColor: #f700ff;
+$backgroundColor: #fff1fe;
+$borderColor: #ff00f2;
 
-$headerColor: #fdd2ff;
+$headerColor: #fdceff;
 $headerHover: #fdd2ff;
 
 $project-card-shadow: #23e2b9;
 $project-card-bkg: #affdea;
 $project-card-hover: #4497e4;
 
+$red: #ff6f6f;
 $green: #b3e76f;
 $blue: #8aedff;
 $blueBorder: #8affd8;
 $yellow: #ffdf51;
 $purple: #da89ff;
-$pink: #f598f8;
+$pink: #fb91ff;
 
 .green {
   background-color: $green;
@@ -32,5 +33,5 @@ $pink: #f598f8;
   background-color: $pink;
 }
 .red {
-  background-color: #dd5c5c;
+  background-color: $red;
 }

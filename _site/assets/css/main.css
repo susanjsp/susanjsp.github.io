@@ -3021,9 +3021,9 @@ readers do not read off random characters that represent icons */
 
 .purple { background-color: #da89ff; }
 
-.pink { background-color: #f598f8; }
+.pink { background-color: #fb91ff; }
 
-.red { background-color: #dd5c5c; }
+.red { background-color: #ff6f6f; }
 
 .btn { text-transform: uppercase; border: none; font-size: 1rem; text-decoration: none; text-align: center; }
 
@@ -3036,39 +3036,67 @@ readers do not read off random characters that represent icons */
 
 .btn-links:hover i { animation: blinking 2s infinite; }
 
-@keyframes blinking { 0% { transform: scale(1); }
-  5% { transform: scale(1, 0); }
+@keyframes blinking { 5% { transform: scale(1, 0); }
   10%, 40% { transform: scale(1); }
   45% { transform: scale(1, 0); }
   50% { transform: scale(1); }
   55% { transform: scale(1, 0); }
-  60%, 100% { transform: scale(1); } }
+  60% { transform: scale(1); } }
 
-.header { display: flex; background-color: #fdd2ff; border: 2px solid #f700ff; border-bottom: none; }
+/* PROJECT SHOW PAGE */
+.btn-back { border: 1px solid black; border-radius: 20px; padding: 8px 24px; display: inline-block; margin-top: 24px; background-color: #affdea; }
+
+.btn-back:hover { background-color: #4497e4; }
+
+.header { display: flex; background-color: #fdceff; border: 2px solid #ff00f2; border-bottom: none; }
 
 .header > :last-child { border-right: none; }
 
-.header > * { font-size: 1.2rem; margin: 0; letter-spacing: 0.1rem; }
+.header > * { font-size: 1.5rem; margin: 0; letter-spacing: 0.1rem; }
 
 .header-hide { display: none; }
 
 /* NAV BAR TABS */
-.header-tab { padding: 4px 4px; display: grid; width: 25%; border-right: solid 2px #f700ff; background-color: #fdd2ff; color: #f700ff; font-family: "VT323", monospace; border-bottom: 2px solid #f700ff; }
+.header-tab { padding: 8px 8px; display: grid; width: 25%; border-right: solid 2px #ff00f2; background-color: #fdceff; color: #ff00f2; font-family: "VT323", monospace; border-bottom: 2px solid #ff00f2; overflow: hidden; position: relative; /* For text & pseudo elements in tab */ }
 
-.header-tab:hover { background-color: #fdd2ff; color: #fa67ff; }
+.header-tab.header-active { background-color: #fff1fe; border-bottom: 2px solid #fff1fe; }
 
-.header-tab.header-active { background-color: #f7e9f6; border-bottom: 2px solid #f7e9f6; }
+.header-tab:hover i { animation: shy 0.8s ease-in, dropdown 0.8s ease-in 0.8s, dropin 0.8s ease-in 1.6s; }
+
+.header-tab:hover span, .header-tab.btn-lines:hover::after, .header-tab.btn-lines:hover::before { opacity: 0; animation: lineSettle 0.5s ease-in 1.8s; animation-fill-mode: both; }
+
+/* Header tabs - line pseudo-elements */
+@keyframes lineSettle { from { padding: 2px 0px; }
+  to { opacity: 1; } }
+
+@keyframes shy { 0%, 100% { top: 10%;
+    left: -28px;
+    transform: rotate(30deg);
+    position: absolute; }
+  20%, 40% { left: -8px;
+    top: 10%;
+    position: absolute; }
+  50% { left: -22px; } }
+
+@keyframes dropdown { 0%, 100% { top: -22px;
+    right: 10px;
+    transform: rotate(180deg);
+    position: absolute; }
+  20%, 40% { top: -8px; }
+  50% { top: -22px; } }
+
+@keyframes dropin { 0% { transform: translateY(-30px); } }
 
 /* WINDOW WRAPPER */
 .window { margin: 0.5rem; display: flex; flex-direction: column; height: 98vh; max-height: 1000px; }
 
-.windowcontent { flex: 1 0 auto; display: grid; place-items: center; border: 2px solid #f700ff; border-top: none; background-color: #f7e9f6; text-align: center; animation: fadeTab 1s; height: 90vh; max-height: 93vh; min-width: 340px; max-width: 1100px; overflow-y: auto; }
+.windowcontent { flex: 1 0 auto; display: grid; place-items: center; border: 2px solid #ff00f2; border-top: none; background-color: #fff1fe; text-align: center; animation: fadeTab 1s; height: 90vh; max-height: 93vh; min-width: 340px; max-width: 1100px; overflow-y: auto; position: relative; }
 
 @keyframes fadeTab { from { opacity: 0; }
   to { opacity: 1; } }
 
 /* PAGES - About */
-.projects-card { transition: 0.1s ease-in-out; width: 300px; max-width: 400px; position: relative; background-color: cornsilk; transition: 0.2s ease-in-out; /* CARD HOVER ANIMATIONS */ }
+.projects-card { transition: 0.1s ease-in-out; width: 300px; max-width: 380px; position: relative; background-color: #fffaec; transition: 0.2s ease-in-out; /* CARD HOVER ANIMATIONS */ }
 
 .projects-card img { object-fit: cover; width: 90%; height: 180px; max-height: 250px; }
 
@@ -3087,9 +3115,9 @@ readers do not read off random characters that represent icons */
 /* GITHUB & LIVE LINK */
 .projects-card-btns { margin: 1rem 0px; position: absolute; right: 22px; bottom: 0px; }
 
-.projects-card-btns .btn-project { padding: 10px 10px 8px 10px; background-color: #affdea; border: solid 1px black; border-radius: 50%; display: block; margin-bottom: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); }
+.btn-project { padding: 10px 10px 8px 10px; background-color: #affdea; border: solid 1px black; border-radius: 50%; display: block; margin-bottom: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); }
 
-.projects-card-btns .btn-project:hover { background-color: #4497e4; animation: bounce 1s infinite; }
+.btn-project:hover { background-color: #4497e4; animation: bounce 1s infinite; }
 
 /* MAC WINDOW STYLE */
 .mac-window { border: 1px solid black; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); }
@@ -3100,13 +3128,15 @@ readers do not read off random characters that represent icons */
 
 .mac-window .mac-window-buttons > * { height: 10px; width: 10px; border-radius: 50%; border: 1px solid black; margin: 5px 4px; }
 
-@keyframes bounce { 0% { transform: translateY(0px); }
-  40% { transform: translateY(-8px); }
-  80%, 100% { transform: translateY(0px); } }
+/* Mac Windows top-left btns */
+@keyframes bounce { 40% { transform: translateY(-8px); }
+  80% { transform: translateY(0px); } }
 
 .avatar { height: 150px; width: 150px; object-fit: cover; border-radius: 50%; border: 2px black solid; box-shadow: 2px 2px 0px 2px white, -2px -2px 0px 2px white; }
 
 #project-post { padding: 16px 1rem; text-align: left; display: block; height: 90%; }
+
+#project-post .mac-window { display: inline-grid; }
 
 #project-post p { line-height: 1.5rem; }
 
@@ -3126,9 +3156,9 @@ readers do not read off random characters that represent icons */
 
 @media (min-width: 768px) { .window { padding: 5rem 0px; } .window .windowcontent { width: 80vw; height: 76vh; } /* HEADER */ .header-tab { letter-spacing: 0px; } .links { grid-template-columns: 1fr 1fr 1fr; padding: 0; } /* PROJECTS */ #projects h2 { grid-column: 1 / span 2; } #project-post { padding: 16px 2rem; } }
 
-@media (min-width: 800px) { .header-tab { display: inline-block; } .btn-lines::before, .btn-lines::after { content: ""; width: clamp(15px, 2vw, 50px); height: 5px; border-top: solid 2px #f700ff; border-bottom: solid 2px #f700ff; display: inline-block; vertical-align: middle; margin: 0 8px 2px 0; } .btn-lines::after { margin: 0 0 2px 8px; } /* PROJECTS PAGE */ }
+@media (min-width: 800px) { .header-tab { display: inline-block; font-size: 1.3rem; } .btn-lines::before, .btn-lines::after { content: ""; width: clamp(15px, 1vw, 50px); height: 6px; border-top: solid 2px #ff00f2; border-bottom: solid 2px #ff00f2; display: inline-block; vertical-align: middle; margin: 0 12px 5px 0; } .btn-lines::after { margin: 0 0 5px 12px; } /* PROJECTS PAGE */ #projects { padding: 0 5vw; } }
 
-@media (min-width: 1000px) { .window { padding: 5rem 10vw; } }
+@media (min-width: 1000px) { .window { padding: 5rem 10vw; } .btn-lines::before, .btn-lines::after { width: 3vw; } }
 
 #about .content { padding: 10vh 1rem 5vh 1rem; }
 
