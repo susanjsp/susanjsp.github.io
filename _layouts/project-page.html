@@ -15,7 +15,8 @@
       {% include header.html %}
       <!-- Tab Content -->
       <div id="project-post" class="windowcontent">
-        <a href="/projects">< Back to All Projects</a>
+        <!-- <a id="top"></a> -->
+        <a href="/projects" class="btn btn-back">< All Projects</a>
         <h2>{{ page.title }}</h2>
         {% if page.collaborators == "none" %}
           <h4>Personal side-project by Susan</h4>
@@ -34,9 +35,9 @@
           <img src="{{ page.mockup }}" alt="Device mockup for {{ page.title }}">
         </div>
           {{ content }}
-        <a id="back-to-top" href=""> ^ </a>
+        </div>
+        <!-- <a id="back-to-top" href="#top" class="btn-project"><i class="far fa-hand-point-up"></i></a> -->
       </div>
-    </div>
     <script src="../assets/anime-master/lib/anime.min.js"></script>
   </body>
 </html>

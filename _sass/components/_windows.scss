@@ -20,6 +20,8 @@
   min-width: 340px;
   max-width: 1100px;
   overflow-y: auto;
+  position: relative;
+  padding: 0px 2vw;
 }
 @keyframes fadeTab {
   from {opacity: 0;}

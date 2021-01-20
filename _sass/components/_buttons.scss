@@ -11,7 +11,7 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 10vw;
+  padding: 0 15vw;
   gap: 1vw;
 }
 .btn-links {
@@ -34,11 +34,23 @@
 }
 
 @keyframes blinking {
-  0% { transform: scale(1); }
   5% { transform: scale(1, 0); }
   10%, 40% { transform: scale(1); }
   45% { transform: scale(1, 0); }
   50% { transform: scale(1); }
   55% { transform: scale(1, 0); }
-  60%, 100% { transform: scale(1); }
+  60% { transform: scale(1); }
+}
+
+/* PROJECT SHOW PAGE */
+.btn-back {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 24px;
+  display: inline-block;
+  margin-top: 24px;
+  background-color: $project-card-bkg;
+  &:hover {
+    background-color: $project-card-hover;
+  }
 }

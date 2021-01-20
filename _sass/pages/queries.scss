@@ -48,30 +48,38 @@
 }
 
 @media (min-width: 800px ) {
-  .header-tab { display: inline-block; }
+  .header-tab {
+    display: inline-block;
+    font-size: 1.3rem;
+  }
   .btn-lines {
     &::before, &::after {
       content: "";
-      width: clamp(15px, 2vw, 50px);
-      height: 5px;
+      width: clamp(15px, 1vw, 50px);
+      height: 6px;
       border-top: solid 2px $borderColor;
       border-bottom: solid 2px $borderColor;
       display: inline-block;
       vertical-align: middle;
-      margin: 0 8px 2px 0;
+      margin: 0 12px 5px 0;
     }
     &::after {
-      margin: 0 0 2px 8px;
+      margin: 0 0 5px 12px;
     }
   }
   /* PROJECTS PAGE */
-  .projects {
-
+  #projects {
+    padding: 0 5vw;
   }
 }
 
 @media (min-width: 1000px) {
   .window {
     padding: 5rem 10vw;
+  }
+  .btn-lines {
+    &::before, &::after {
+      width: 3vw;
+    }
   }
 }
