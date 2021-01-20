@@ -6,11 +6,6 @@
   & > :last-child {
     border-right: none;
   }
-  & > * {
-    font-size: 1.5rem;
-    margin: 0;
-    letter-spacing: 0.1rem;
-  }
 }
 .header-hide {
   display: none;
@@ -18,7 +13,10 @@
 
 /* NAV BAR TABS */
 .header-tab {
-  padding: 8px 8px;
+  font-size: 1.2rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+  padding: 8px 0px;
   display: grid;
   width: 25%;
   border-right: solid 2px $borderColor;
@@ -28,6 +26,10 @@
   border-bottom: 2px solid $borderColor;
   overflow: hidden;
   position: relative;
+  i {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
   &.header-active {
     background-color: $backgroundColor;
     border-bottom: 2px solid $backgroundColor;
@@ -52,12 +54,12 @@
 @keyframes shy {
   0%, 100% { top: 10%; left: -28px; transform: rotate(30deg); position: absolute; }
   20%, 40% { left: -8px; top: 10%; position: absolute;}
-  50% { left: -22px; }
+  50% { left: -28px; }
 }
 @keyframes dropdown {
-  0%, 100% { top: -22px; right: 10px; transform: rotate(180deg); position: absolute; }
+  0%, 100% { top: -28px; right: 10px; transform: rotate(180deg); position: absolute; }
   20%, 40% { top: -8px; }
-  50% { top: -22px; }
+  50% { top: -28px; }
 }
   @keyframes dropin {
   0% { transform: translateY(-30px); }
