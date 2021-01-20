@@ -4,7 +4,7 @@
   }
 }
 @media (min-width: 550px) {
-  .header-tab { letter-spacing: 0.1rem; }
+  .header-tab { letter-spacing: 0.2rem; }
   .window {
     padding: 2rem 4vw;
   }
@@ -28,9 +28,7 @@
       height: 76vh;
     }
   }
-  /* HEADER */
-  .header-tab { letter-spacing: 0px; }
-
+  .header-tab > i { margin-bottom: none;}
   .links {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
@@ -51,6 +49,7 @@
   .header-tab {
     display: inline-block;
     font-size: 1.3rem;
+    letter-spacing: 0rem;
   }
   .btn-lines {
     &::before, &::after {
