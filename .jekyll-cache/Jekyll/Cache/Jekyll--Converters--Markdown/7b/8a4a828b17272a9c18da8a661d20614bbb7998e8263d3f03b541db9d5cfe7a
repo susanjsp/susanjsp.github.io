@@ -1,48 +1,11 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>giftapes</title>
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <script type="module" src="../../assets/js/main.js"></script>
-  </head>
-  <body>
-    <div class="window">
-      <!-- Tab Links -->
-      <div class="header">
-  <a class="btn header-tab btn-lines" href="/" data-tab="home"><i class="fas fa-home"></i><span> home</span></a>
-  <a class="btn header-tab btn-lines" href="/about" data-tab="about"><i class="fas fa-user-circle"></i><span> about</span></a>
-  <a class="btn header-tab btn-lines" href="/projects" data-tab="projects"><i class="fas fa-briefcase"></i><span> projects</span></a>
-  <a class="btn header-tab btn-lines" href="/contact" data-tab="contact"><i class="fas fa-envelope-open-text"></i><span> contact</span></a>
-</div>
-      <!-- Tab Content -->
-      <div id="project-post" class="windowcontent">
-        <!-- <a id="top"></a> -->
-        <a href="/projects" class="btn btn-back">< All Projects</a>
-        <h2>giftapes</h2>
-        
-          <p><strong>Collaborators: </strong>Robert, Ondine, Jurek, Susan</p>
-        
-        <!-- Mac Window style -->
-        <div class="mac-window">
-          <div class="mac-window-header">
-            <div class="mac-window-buttons">
-              <div class="red"></div>
-              <div class="yellow"></div>
-              <div class="green"></div>
-            </div>
-          </div>
-          <img src="https://res.cloudinary.com/susanjsp/image/upload/v1611124186/portfolio/giftapes_jco9li.png" alt="Device mockup for giftapes">
-        </div>
-          <h3 id="context">Context</h3>
+I")	<h3 id="context">Context</h3>
 <p>This project was completed as a final project of my bootcamp. The original pitch idea was delivered by Rob, who wanted to create a curation website that is more meaningful than the sharing that’s currently seen in traditional social media sites.</p>
 
 <h3 id="description">Description</h3>
 <p>Put the meaning back into sharing - curate fun “microsites” and share with friends. Choose between creating a mixtape, photo-story, a personal quiz or a curated list of interesting links and articles.</p>
 
 <h3 id="technology">Technology</h3>
-<p>Rails MVC, PostgreSQL, bootstrap, SaSS, JavaScript, heroku, AWS (Cloudinary)</p>
+<p>Rails MVC, PostgreSQL, bootstrap, SaSS, JavaScript, heroku</p>
 
 <h3 id="project-goals">Project Goals</h3>
 <ul>
@@ -65,10 +28,4 @@
 <h3 id="what-i-learnt">What I learnt</h3>
 <p>This project was the first experience of creating an app with endless opportunities. We came up with amazing ideas in the initial stage of creating the app, but quickly learnt that most of the features were too complicated for our experience level, or would not be feasible in our time-frame. Although frustrating, this was a valuable lesson in teaching us how to work within constraints and still make the most out of the resources that we had available to us.</p>
 
-
-        </div>
-        <!-- <a id="back-to-top" href="#top" class="btn-project"><i class="far fa-hand-point-up"></i></a> -->
-      </div>
-    <script src="../assets/anime-master/lib/anime.min.js"></script>
-  </body>
-</html>
+:ET

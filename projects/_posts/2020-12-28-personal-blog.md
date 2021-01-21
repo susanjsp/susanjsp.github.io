@@ -2,8 +2,7 @@
 title: my blog
 category: projects
 collaborators: none
-mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1610844539/portfolio/mockup-sm_ykfdtu.png'
-cover: 'https://res.cloudinary.com/susanjsp/image/upload/v1610843921/portfolio/my-blog-cover_opfrcu.png'
+mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1611124187/portfolio/My_blog_f36xpv.png'
 gif:
 github_link: "https://github.com/susanjsp/my-blog"
 live_link: "https://susanjsp.com/"
@@ -13,6 +12,9 @@ A personal project to experiment with building and deploying static websites
 
 ### Description
 Come along with me in my journey of transitioning from health care to software engineering. The main themes of my posts will be around tech career, short explanations of development concepts and there will be book reviews from time to time.
+
+### Technology
+Jekyll, SaSS, AWS (Cloudinary), Netlify
 
 ### Project Goal
 - To create a place where I could record everything I've learnt while experimenting and building.

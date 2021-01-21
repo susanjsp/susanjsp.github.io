@@ -3,11 +3,11 @@
   width: 300px;
   max-width: 380px;
   position: relative;
-  background-color: rgb(255, 250, 236);
+  background-color: #FFEFE7;
   transition: 0.2s ease-in-out;
   img {
     object-fit: cover;
-    width: 90%;
+    width: 100%;
     height: 180px;
     max-height: 250px;
   }
@@ -19,8 +19,10 @@
     font-style: italic;
     color: black;
     text-transform: uppercase;
-    margin: 8px 0px;
     display: block;
+  }
+  & > :nth-child(2) {
+    padding-top: 24px;
   }
   /* CARD HOVER ANIMATIONS */
   &:hover {
