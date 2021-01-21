@@ -3,9 +3,8 @@ title: the cocktail card
 category: projects
 collaborators: Susan, Ian
 description: Basic rails MVC app for creating and saving cocktail recipes
-mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1610785125/portfolio/cocktail-card-mock-sm_oe8xmm.png'
-cover: 'https://res.cloudinary.com/susanjsp/image/upload/v1610839166/portfolio/cocktail-card-desktop-sm_iau1ww.png'
-gif: 'https://res.cloudinary.com/susanjsp/image/upload/v1610838828/portfolio/cocktail-card-recording-sm_qtk238.gif'
+mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1611124187/portfolio/Cocktail_card_fcijyg.png'
+gif:
 github_link: "https://github.com/susanjsp/rails-mister-cocktail"
 live_link: "https://cocktails-span.herokuapp.com/"
 ---
@@ -14,6 +13,9 @@ This project was our first rails CRUD app that we were creating from beginning t
 
 ### Project Goals
 - Design & implement an application to create, update, save and delete cocktail ingredients.
+
+### Technology
+Rails MVC, PostgreSQL, SaSS, bootstrap, heroku , AWS (Cloudinary) & [The Cocktail DB API](https://www.thecocktaildb.com/)
 
 ### My role
 This project was done as a pair-programming exercise, and would alternate between doing work alone and working together when we encountered something more difficult.

@@ -2,8 +2,7 @@
 title: Social Badminton
 collaborators: none
 category: projects
-mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1610841113/portfolio/badminton-figma_rnyvqs.png'
-cover: 'https://res.cloudinary.com/susanjsp/image/upload/v1610841113/portfolio/badminton-figma_rnyvqs.png'
+mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1611124187/portfolio/badminton_e4vsoo.png'
 gif:
 github_link: "https://github.com/susanjsp/social-badminton"
 live_link:
@@ -14,6 +13,9 @@ The official badminton website for our area was old, and there was no website th
 
 ### Description
 View all local badminton clubs in Brisbane and see all the available sessions playing near you!
+
+### Technology
+Rails MVC, PostgreSQL, bootstrap, SaSS, JavaScript, heroku, AWS (Cloudinary)
 
 ### Project Goals
 - Create a website that shows a listing of all local badminton clubs

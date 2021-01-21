@@ -3,8 +3,7 @@ title: chickens rental
 category: projects
 collaborators: Robert, Jurek, Ondine, Susan
 description: View, list and book the company of only the very best chickens near you! Leave reviews to help future users.
-mockup:
-cover: 'https://res.cloudinary.com/susanjsp/image/upload/v1610845151/portfolio/chickensrental_hwhzrg.png'
+mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1611124186/portfolio/chickens-rental_dfizpc.png'
 gif:
 github_link: "https://github.com/susanjsp/chickens-rental"
 live_link: "https://chickens-rental.herokuapp.com/"
@@ -18,6 +17,9 @@ View, list and book the company of only the very best chickens near you! Leave r
 ### Project Goals
 - Have a system where users can create, edit and delete listings for an item
 - Implement a feature where users can create bookings on other users' items
+
+### Technology
+Rails MVC, PostgreSQL, bootstrap, SaSS, heroku, AWS (Cloudinary)
 
 ### My role
 This was our first group project to create a complicated app. We worked together in the first phases of the project (brainstorming, user stories, creating database) and assigned roles for back-end feature implementation. I was responsible for creating bookings.
