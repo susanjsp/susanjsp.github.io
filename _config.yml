@@ -3,7 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Susan's Portfolio" # the name of your site, e.g. ACME Corp.
 permalink: /projects/:title
 
-title_image: "https://res.cloudinary.com/susanjsp/image/upload/v1611759540/portfolio/twitter-card_avfmfu.png"
+title_image: "https://res.cloudinary.com/susanjsp/image/upload/v1611760039/portfolio/twitter-card_t5h9iz.png"
 
 defaults:
   -
