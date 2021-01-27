@@ -37,12 +37,12 @@ body {
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: $headerFont;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 900;
+  font-family: $bodyFont;
   color: black;
   margin: 2rem 0px;
+}
+h1 {
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 2rem;

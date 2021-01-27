@@ -18,3 +18,5 @@ linkedin: "https://www.linkedin.com/in/susanpan96/"
 blog: "https://susanjsp.com"
 email: "susanjsp@protonmail.com"
 
+exclude:
+  - .jekyll-cache
