@@ -3172,7 +3172,9 @@ body { overflow: hidden; display: flex; justify-content: center; align-items: ce
 
 body p, body ul, body ol { line-height: 2rem; font-family: "Ubuntu", sans-serif; margin-bottom: 2rem; color: #392c68; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Roboto", sans-serif; text-transform: uppercase; font-style: italic; font-weight: 900; color: black; margin: 2rem 0px; }
+h1, h2, h3, h4, h5, h6 { font-family: "Ubuntu", sans-serif; color: black; margin: 2rem 0px; }
+
+h1 { font-size: 2.5rem; }
 
 h2 { font-size: 2rem; }
 

@@ -8,17 +8,17 @@ gif:
 github_link: "https://github.com/susanjsp/rails-mister-cocktail"
 live_link: "https://cocktails-span.herokuapp.com/"
 ---
-### Context
-This project was our first rails CRUD app that we were creating from beginning to end.
+### Description
+Basic rails MVC app for creating and saving cocktail ingredients.
+
+### My role
+Full-stack Developer. This project was done as a pair-programming exercise. We both shared the workload from back-end to front-end styling.
 
 ### Project Goals
 - Design & implement an application to create, update, save and delete cocktail ingredients.
 
 ### Technology
-Rails MVC, PostgreSQL, SaSS, bootstrap, heroku , AWS (Cloudinary) & [The Cocktail DB API](https://www.thecocktaildb.com/)
-
-### My role
-This project was done as a pair-programming exercise, and would alternate between doing work alone and working together when we encountered something more difficult.
+Rails MVC, PostgreSQL, SaSS, bootstrap, heroku, AWS (Cloudinary) & [The Cocktail DB API](https://www.thecocktaildb.com/)
 
 ### Outcome
 We were able to implement all the basic features originally planned for the app. As our working styles were complimentary, working as a pair created a productive and supportive environment.

@@ -7,8 +7,11 @@ gif:
 github_link: "https://github.com/susanjsp/susanjsp.github.io"
 live_link: "https://susanjsp.dev/"
 ---
-### Context
+### Description
 A personal project to practice building and deploying with jekyll and github pages.
+
+### My Role
+Full-Stack Developer
 
 ### Technology
 Jekyll, SaSS, GitHub Pages with anime.js library
