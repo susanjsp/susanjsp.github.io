@@ -44,7 +44,8 @@
 
 /* PROJECT SHOW PAGE */
 .btn-back {
-  border: 1px solid black;
+  border: 2px solid $borderColor;
+  color: $borderColor;
   border-radius: 20px;
   padding: 8px 24px;
   display: inline-block;

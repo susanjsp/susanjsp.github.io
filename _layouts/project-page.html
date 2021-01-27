@@ -14,12 +14,12 @@
       <!-- Tab Links -->
       {% include header.html %}
       <!-- Tab Content -->
-      <div id="project-post" class="windowcontent">
+      <main id="project-post" class="windowcontent">
         <!-- <a id="top"></a> -->
         <a href="/projects" class="btn btn-back">< All Projects</a>
-        <h2>{{ page.title }}</h2>
+        <h1>{{ page.title }}</h1>
         {% if page.collaborators == "none" %}
-          <h4>Personal side-project by Susan</h4>
+          <h2>Personal side-project by Susan</h2>
         {% else %}
           <p><strong>Collaborators: </strong>{{ page.collaborators }}</p>
         {% endif %}
@@ -34,10 +34,12 @@
           </div>
           <img src="{{ page.mockup }}" alt="Device mockup for {{ page.title }}">
         </div>
+        <article>
           {{ content }}
+        </article>
         </div>
         <!-- <a id="back-to-top" href="#top" class="btn-project"><i class="far fa-hand-point-up"></i></a> -->
-      </div>
+      </main>
     <script src="../assets/anime-master/lib/anime.min.js"></script>
   </body>
 </html>
