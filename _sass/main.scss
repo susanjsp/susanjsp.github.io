@@ -27,12 +27,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: $bkgColor;
   margin: 0;
   p, ul, ol {
     line-height: 2rem;
     font-family: $bodyFont;
     margin-bottom: 2rem;
+    color: $borderColor;
   }
 }
 h1, h2, h3, h4, h5, h6 {
