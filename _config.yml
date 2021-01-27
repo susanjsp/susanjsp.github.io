@@ -11,6 +11,8 @@ defaults:
     values:
       layout: "project-page"
 
+twitter_username: "@susanjsp_"
+author: "susanjsp"
 twitter: "http://www.twitter.com/susanjsp_"
 github:  "http://github.com/susanjsp"
 codepen: "https://codepen.io/susanjsp"
