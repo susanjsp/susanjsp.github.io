@@ -3090,7 +3090,7 @@ readers do not read off random characters that represent icons */
 /* WINDOW WRAPPER */
 .window { margin: 0.5rem; display: flex; flex-direction: column; height: 98vh; max-height: 1000px; }
 
-.windowcontent { flex: 1 0 auto; display: grid; place-items: center; border: 2px solid #392c68; border-top: none; background-color: #ffe8ef; text-align: center; animation: fadeTab 1s; height: 90vh; max-height: 93vh; min-width: 340px; max-width: 1100px; overflow-y: auto; position: relative; padding: 0px 2vw; }
+.windowcontent { flex: 1 0 auto; display: grid; place-items: center; border: 2px solid #392c68; border-top: none; background-color: #ffe8ef; text-align: center; animation: fadeTab 1s; height: 88vh; max-height: 93vh; min-width: 340px; max-width: 1100px; overflow-y: auto; position: relative; padding: 0px 2vw; }
 
 @keyframes fadeTab { from { opacity: 0; }
   to { opacity: 1; } }
