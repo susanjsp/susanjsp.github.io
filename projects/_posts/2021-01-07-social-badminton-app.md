@@ -5,7 +5,7 @@ category: projects
 mockup: 'https://res.cloudinary.com/susanjsp/image/upload/v1611124187/portfolio/badminton_e4vsoo.png'
 gif:
 github_link: "https://github.com/susanjsp/social-badminton"
-live_link:
+live_link: 'http://www.qldbadminton.social/'
 ---
 ! This project is still in progress !
 ### Description
