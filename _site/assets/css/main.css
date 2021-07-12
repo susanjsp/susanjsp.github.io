@@ -3164,7 +3164,7 @@ readers do not read off random characters that represent icons */
 
 #about .content { padding: 10vh 1rem 5vh 1rem; }
 
-.talks-list-item img { object-fit: contain; width: 350px; }
+.talks-list-item img { object-fit: contain; width: 351px; }
 
 .talks-list-item h3 { margin: 2rem 0px 1rem 0px; }
 
