@@ -51,21 +51,6 @@
     font-size: 1.3rem;
     letter-spacing: 0rem;
   }
-  .btn-lines {
-    &::before, &::after {
-      content: "";
-      width: clamp(15px, 1vw, 50px);
-      height: 6px;
-      border-top: solid 2px $borderColor;
-      border-bottom: solid 2px $borderColor;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 12px 5px 0;
-    }
-    &::after {
-      margin: 0 0 5px 12px;
-    }
-  }
   /* PROJECTS PAGE */
   #projects {
     padding: 0 5vw;
@@ -78,7 +63,23 @@
   }
   .btn-lines {
     &::before, &::after {
-      width: 3vw;
+      content: "";
+      width: clamp(15px, 1.8vw, 60px);
+      height: 6px;
+      border-top: solid 2px $borderColor;
+      border-bottom: solid 2px $borderColor;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 12px 5px 0;
+    }
+    &::after {
+      margin: 0 0 5px 12px;
+    }
+  }
+  .talks-list-item {
+    display: flex;
+    img {
+      margin-right: 2rem;
     }
   }
 }

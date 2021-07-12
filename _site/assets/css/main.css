@@ -3134,6 +3134,12 @@ readers do not read off random characters that represent icons */
 @keyframes bounce { 40% { transform: translateY(-8px); }
   80% { transform: translateY(0px); } }
 
+.talks-list-item img { object-fit: contain; width: 350px; }
+
+.talks-list-item h3 { margin: 2rem 0px 1rem 0px; }
+
+.talks-list-item h4 { margin: 0px; font-size: 1rem; }
+
 .avatar { height: 150px; width: 150px; object-fit: cover; border-radius: 50%; border: 2px black solid; box-shadow: 2px 2px 0px 2px white, -2px -2px 0px 2px white; }
 
 #project-post { padding: 16px 1rem; text-align: left; display: block; height: 90%; }
@@ -3158,9 +3164,9 @@ readers do not read off random characters that represent icons */
 
 @media (min-width: 768px) { .window { padding: 5rem 0px; } .window .windowcontent { width: 80vw; height: 76vh; } .header-tab > i { margin-bottom: none; } .links { grid-template-columns: 1fr 1fr 1fr; padding: 0; } /* PROJECTS */ #projects h2 { grid-column: 1 / span 2; } #project-post { padding: 16px 2rem; } }
 
-@media (min-width: 800px) { .header-tab { display: inline-block; font-size: 1.3rem; letter-spacing: 0rem; } .btn-lines::before, .btn-lines::after { content: ""; width: clamp(15px, 1vw, 50px); height: 6px; border-top: solid 2px #392c68; border-bottom: solid 2px #392c68; display: inline-block; vertical-align: middle; margin: 0 12px 5px 0; } .btn-lines::after { margin: 0 0 5px 12px; } /* PROJECTS PAGE */ #projects { padding: 0 5vw; } }
+@media (min-width: 800px) { .header-tab { display: inline-block; font-size: 1.3rem; letter-spacing: 0rem; } /* PROJECTS PAGE */ #projects { padding: 0 5vw; } }
 
-@media (min-width: 1000px) { .window { padding: 5rem 10vw; } .btn-lines::before, .btn-lines::after { width: 3vw; } }
+@media (min-width: 1000px) { .window { padding: 5rem 10vw; } .btn-lines::before, .btn-lines::after { content: ""; width: clamp(15px, 1.8vw, 60px); height: 6px; border-top: solid 2px #392c68; border-bottom: solid 2px #392c68; display: inline-block; vertical-align: middle; margin: 0 12px 5px 0; } .btn-lines::after { margin: 0 0 5px 12px; } .talks-list-item { display: flex; } .talks-list-item img { margin-right: 2rem; } }
 
 #about .content { padding: 10vh 1rem 5vh 1rem; }
 

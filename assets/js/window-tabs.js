@@ -11,6 +11,10 @@ function initWindowTabs() {
       const aboutActive = document.querySelector('a[data-tab="about"]');
       aboutActive.classList.add('header-active');
       break;
+      case "/talks":
+        const talksActive = document.querySelector('a[data-tab="talks"]');
+        talksActive.classList.add('header-active');
+        break;
     case "/contact":
       const contactActive = document.querySelector('a[data-tab="contact"]');
       contactActive.classList.add('header-active');
